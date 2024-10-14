@@ -5,7 +5,7 @@ import {useBlog} from '../../Context';
 const JobCom = () => {
     const [message, setMessage] = useState('');
     const [name, setName] = useState('');
-    const [photo, setPhoto] = useState(null);
+    const [file, setFile] = useState(null); // Change from photo to file
     const [status, setStatus] = useState('');
 
     const {addPost} = useBlog();
@@ -18,13 +18,13 @@ const JobCom = () => {
         setStatus(''); // Clear previous status messages
 
         const formData = new FormData();
-        if (photo) {
-            formData.append('photo', photo);
+        if (file) {
+            formData.append('document', file); // Change to 'document'
         }
         try {
-            if (photo) {
+            if (file) {
                 const uploadResponse = await axios.post(
-                    `https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`,
+                    `https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`,
                     formData,
                     {
                         headers: {
@@ -37,9 +37,9 @@ const JobCom = () => {
                     }
                 );
                 if (uploadResponse.data.ok) {
-                    setStatus('Photo sent successfully!');
+                    setStatus('File sent successfully!');
                 } else {
-                    setStatus('Error sending photo.');
+                    setStatus('Error sending file.');
                 }
             }
         } catch (error) {
@@ -67,12 +67,12 @@ const JobCom = () => {
                 required
             />
 
-            <label htmlFor="photo">Upload Your CV (Optional):</label>
+            <label htmlFor="file">Upload Your CV (Optional, PDF, DOC, etc.):</label>
             <input
                 type="file"
-                id="photo"
-                accept="image/*"
-                onChange={(e) => setPhoto(e.target.files[0])}
+                id="file"
+                accept=".pdf,.doc,.docx,.txt" // Accept multiple file formats
+                onChange={(e) => setFile(e.target.files[0])}
             />
 
             <button type="submit">Submit</button>
