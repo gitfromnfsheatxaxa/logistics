@@ -2,23 +2,27 @@
 import React from 'react';
 import { Route, Routes} from 'react-router-dom';
 import './index.css';
-import AbourtCom from "./components/AboutCom/AbourtCom.jsx";
-import JobCom from "./components/JobCom/JobCom.jsx";
-import ContactCom from "./components/ContactCom/ContactCom.jsx";
 import NavbarCom from "./components/NavbarCom/NavbarCom.jsx";
 import FooterCom from "./components/FooterCom/FooterCom.jsx";
-import HomeCom from "./components/HomeCom/HomeCom.jsx";
+import ScrollToTop from "./Pages/Scroll To Top/ScrollToTop.jsx";
+import Contacts from "./Pages/contact/Contacts.jsx";
+import Job from "./Pages/job/Job.jsx";
+import About from "./Pages/about/About.jsx";
+import Home from "./Pages/home/Home.jsx";
+import NotFound from "./Pages/404/NotFound.jsx";
 
 function App() {
   return (
       <div  className="app">
+          <ScrollToTop/>
         <NavbarCom/>
         <main>
           <Routes>
-            <Route path="/" element={<HomeCom/>}/>
-            <Route path="/about" element={<AbourtCom/>} />
-            <Route path="/job" element={<JobCom/>} />
-            <Route path="/contact" element={<ContactCom/>} />
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>} />
+            <Route path="/job" element={<Job/>} />
+            <Route path="/contact" element={<Contacts/>} />
+              <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <FooterCom/>

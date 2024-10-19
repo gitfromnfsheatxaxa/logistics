@@ -1,0 +1,55 @@
+/* ContactsCom.css */
+
+.contacts-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contacts-header {
+    color: navy; /* Use navy or red if preferred */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: navy; /* Use navy or red if preferred */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #333; /* Use navy or red if preferred */
+}
+
+button {
+    background-color: #d40067; /* Use navy or red if preferred */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a50050; /* Darker shade for hover effect */
+}
+
+.status {
+    margin-top: 10px;
+    color: green; /* Success message color */
+}

@@ -14,7 +14,6 @@ body {
     margin: 0;
     padding: 0;
     position: relative; /* Required for the pseudo-element */
-    background-image: url("./Image/gossip-background-d99pkrwwvz9gf9ho.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
