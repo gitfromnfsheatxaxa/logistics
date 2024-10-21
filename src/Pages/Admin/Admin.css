@@ -1,0 +1,41 @@
+.admin-container {
+    padding: 20px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.admin-form input,
+.admin-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form button {
+    background-color: #ffcc33;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-list {
+    margin-top: 30px;
+}
+
+.news-item {
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.news-item button {
+    margin: 5px;
+}

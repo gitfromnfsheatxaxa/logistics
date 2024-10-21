@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import './ContactsCom.css'; // Make sure to create this CSS file
 
@@ -42,46 +42,54 @@ const ContactsCom = () => {
         <div className="contacts-container">
             <h1 className="contacts-header">Contact Us</h1>
             <form onSubmit={handleSubmit} className="contacts-form">
-                <label htmlFor="name">Your Full Name <span style={{ color: 'red' }}>*</span></label>
-                <input
-                    type="text"
-                    id="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
+                <div>
+                    <label htmlFor="name">Your Full Name <span style={{color: 'red'}}>*</span></label>
+                    <input
+                        type="text"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                </div>
 
-                <label htmlFor="email">Email <span style={{ color: 'red' }}>*</span></label>
-                <input
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
+                <div>
+                    <label htmlFor="email">Email <span style={{color: 'red'}}>*</span></label>
+                    <input
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
 
-                <label htmlFor="phone">Phone Number <span style={{ color: 'red' }}>*</span></label>
-                <input
-                    type="tel"
-                    id="phone"
-                    value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    required
-                />
+                <div>
+                    <label htmlFor="phone">Phone Number <span style={{color: 'red'}}>*</span></label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        value={phoneNumber}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
+                        required
+                    />
+                </div>
 
-                <label htmlFor="message">Message</label>
-                <textarea
-                    id="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                />
+                <div>
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                        id="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
+                </div>
 
-                <button type="submit">Send Message</button>
-
-                {/* Display status messages */}
-                <h3 className="status">
-                    {status && <p>{status}</p>}
-                </h3>
+                <div className="btn-container">
+                    <button type="submit">Send Message</button>
+                    <h3 className="status">
+                        {status && <p>{status}</p>}
+                    </h3>
+                </div>
             </form>
         </div>
     );

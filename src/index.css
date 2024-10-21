@@ -60,20 +60,11 @@ ul {
     color: #e0b0ff; /* Hover effect */
 }
 
-/* Footer styling */
-.footer {
-    background-color: #1c1c1c; /* Matching the navbar */
-    color: #f5f5f5;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+
+
 
 /* Page layout */
 main {
-    padding: 4rem 2rem;
     min-height: 80vh; /* To ensure footer sticks to the bottom */
 }
 
