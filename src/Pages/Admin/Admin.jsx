@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
+import './Admin.css';
 import AdminCom from "../../components/AdminCom/AdminCom.jsx";
-import "./Admin.css"
-import Footer from "../../components/FooterCom/FooterCom.jsx";
 
-const Admin = () => {
+const AdminPage = () => {
+
     return (
-        <div>
+        <div className="admin-container">
+            <h1>Welcome to the Admin Page</h1>
+            <p>Only accessible by admins.</p>
             <AdminCom/>
-            {/*<Footer/>*/}
         </div>
     );
 };
 
-export default Admin;
+export default AdminPage;

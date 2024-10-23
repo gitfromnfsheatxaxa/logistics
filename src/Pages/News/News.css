@@ -1,0 +1,77 @@
+/* src/pages/News.css */
+
+.news-container {
+    padding: 20px;
+    background-color: #0A1838; /* Dark background for the news page */
+    color: #fff; /* Text color for contrast */
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.news-container h1 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2.5em; /* Large font size for the title */
+}
+
+.news-list {
+    display: grid; /* Use grid layout for news items */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+}
+
+.news-item {
+    background-color: #f4f4f4; /* Light background for news items */
+    padding: 15px; /* Padding inside news items */
+    border-radius: 8px; /* Rounded corners for news items */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.news-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.news-item h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for the title */
+    color: #333; /* Darker color for the title */
+}
+
+.news-item p {
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.news-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above image */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .news-container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .news-container h1 {
+        font-size: 2em; /* Smaller font size for the title */
+    }
+
+    .news-item h3 {
+        font-size: 1.2em; /* Smaller font size for item titles */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-item {
+        padding: 10px; /* Less padding for small screens */
+    }
+
+    .news-container h1 {
+        font-size: 1.5em; /* Even smaller font size for the title */
+    }
+}

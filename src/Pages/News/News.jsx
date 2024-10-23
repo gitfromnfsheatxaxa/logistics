@@ -1,19 +1,26 @@
 import React from 'react';
-import NewsComponent from '../../components/NewsComponent/NewsComponent.jsx';
+import { useBlog } from '../../Context.jsx';
+import './News.css'; // Import your CSS file
 
-const News = ({ news }) => {
+const News = () => {
+    const { posts } = useBlog(); // Access the posts from context
+
     return (
-        <div className="news-page">
+        <div className="news-container">
+            <h1>Published News</h1>
             <div className="news-list">
-                {news && news.length > 0 ? (
-                    news.map((item, index) => (
-                        <NewsComponent key={index} title={item.title} content={item.content}/>
-                    ))
+                {posts.length === 0 ? (
+                    <p>No news published yet.</p>
                 ) : (
-                    <p>No news available</p>
+                    posts.map((item, index) => (
+                        <div key={index} className="news-item">
+                            <h3>{item.title}</h3>
+                            <p>{item.description}</p>
+                            {item.image && <img src={item.image} alt="News" />}
+                        </div>
+                    ))
                 )}
             </div>
-
         </div>
     );
 };

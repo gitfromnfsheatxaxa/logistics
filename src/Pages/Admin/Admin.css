@@ -1,20 +1,32 @@
+
 .admin-container {
     padding: 20px;
+    background-color: #0A1838; /* Keep background consistent */
+    max-width: 100%; /* Set to 100% for full width */
+    height: 100vh; /* Set to 100vh for full height */
+    display: flex;
+    flex-direction: column; /* Use flexbox for vertical alignment */
+    justify-content: flex-start; /* Align items at the top */
+    box-shadow: none; /* Remove shadow for a flat design */
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .admin-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    justify-content: flex-start; /* Align form items at the top */
+    margin-bottom: 30px;
 }
 
 .admin-form input,
 .admin-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+
+    padding: 15px 20px;
+    margin: 20px 0;
+    border: 1px solid transparent;
     border-radius: 5px;
+    font-size: 16px;
+
 }
 
 .admin-form button {
@@ -23,19 +35,39 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .news-list {
     margin-top: 30px;
+    flex-grow: 1; /* Allow news list to expand and fill space */
 }
 
 .news-item {
     background-color: #f4f4f4;
-    margin: 10px;
+    margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.news-item p {
+    margin: 10px 0;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 
 .news-item button {
-    margin: 5px;
+    margin-top: 10px;
+    background-color: #d40067;
+    color: white;
 }
