@@ -1,6 +1,5 @@
-/* Form styling */
 .telegram-form {
-    background-color: #fff; /* White background for the form */
+    background-color: #0A1931; /* Dark blue background */
     padding: 2rem;
     border-radius: 8px;
     max-width: 50%;
@@ -8,74 +7,77 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    color: #333; /* Dark text */
+    gap: 1.5rem;
+    color: #FFFFFF; /* White text */
+    font-family: 'Arial', sans-serif;
 }
 
-.telegram-form h2 {
-    color: #004080; /* Dark blue for the heading */
-    text-align: center;
+.apply {
+    color: #d40067; /* Slightly off-white color */
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
-    font-weight: bold;
-}
-.telegram-form textarea{
-    color: #333;
-}
-.telegram-form label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #444444 !important;
+    text-align: center;
 }
 
+/* Input field styles */
 .telegram-form input,
 .telegram-form textarea,
 .telegram-form select {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #0A1931; /* Dark blue for inputs */
+    border: 2px solid #3E497A; /* Lighter blue borders */
+    padding: 1rem;
+    border-radius: 5px;
     font-size: 1rem;
+    color: #FFFFFF;
     width: 100%;
-    color: #333;
+}
 
+.telegram-form input::placeholder,
+.telegram-form textarea::placeholder {
+    color: #D9D9D9; /* Light gray placeholders */
 }
-input::placeholder{
-    color: #444;
+
+/* Label styles */
+.telegram-form label {
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
+
+/* Button styling similar to the image */
 .telegram-form button {
-    background-color: #d40067; /* Hot pink for the button */
-    color: white;
-    padding: 0.75rem;
+    background-color: #FFB703; /* Yellow button */
+    color: #0A1931; /* Dark text */
+    padding: 1rem;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .telegram-form button:hover {
-    background-color: #a50050;
+    background-color: #FB8500; /* Darker orange for hover */
+    transform: translateY(-2px); /* Slight hover effect */
 }
 
-.consent-section {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .telegram-form {
+        max-width: 90%;
+    }
 }
 
-.consent-section label {
-    font-size: 0.9rem;
-    color: #333 !important;
+@media (max-width: 480px) {
+    .telegram-form {
+        max-width: 100%;
+    }
+
+    .apply {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
 }
-.phone-input{
-    color: #333 !important;
-}
-.status, .status p{
-    color: #333 !important;
-    font-weight: bolder;
-}
-.apply{
-    color: navy;
-    text-align: center;
+h1{
+    color: #d40067;
 }

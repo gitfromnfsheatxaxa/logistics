@@ -1,19 +1,14 @@
-/* Reset some basic elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
 
-}
 body {
-    font-family: 'Georgia', serif;
-    color: #f5f5f5;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    position: relative; /* Required for the pseudo-element */
+    position: relative;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,148 +23,5 @@ a {
 
 ul {
     list-style: none;
-}
-
-/* Navbar styling */
-.navbar {
-    background-color: #1c1c1c; /* Dark background for the navbar */
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    color: #e0b0ff; /* A soft pastel color for the title */
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar ul li a {
-    color: #f5f5f5; /* White for links */
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #e0b0ff; /* Hover effect */
-}
-
-
-
-
-/* Page layout */
-main {
-    min-height: 80vh; /* To ensure footer sticks to the bottom */
-}
-
-h2 {
-    color: #e0b0ff;
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1.5rem;
-    color: #dcdcdc;
-}
-
-/* Form styling */
-.telegram-form {
-    background-color: #1c1c1c; /* Dark form background */
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 500px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.telegram-form label {
-    font-weight: bold;
-    color: #e0b0ff;
-}
-
-.telegram-form input,
-.telegram-form textarea,
-.telegram-form button {
-    padding: 0.75rem;
-    border: 1px solid #444; /* Subtle border */
-    border-radius: 4px;
-    background-color: #2c2c2c; /* Same as body for seamless look */
-    color: #f5f5f5;
-}
-
-.telegram-form input:focus,
-.telegram-form textarea:focus {
-    border-color: #e0b0ff; /* Focused input border color */
-    outline: none;
-}
-
-.telegram-form button {
-    background-color: #e0b0ff;
-    color: #2c2c2c;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.telegram-form button:hover {
-    background-color: #d2a6e0; /* Darken the button slightly on hover */
-}
-
-/* Home page */
-.home {
-    text-align: center;
-}
-.home h2 {
-    font-size: 2.2rem;
-}
-/* Add to your styles.css or relevant CSS file */
-
-.telegram-form textarea {
-    height: 100px; /* Adjust as needed */
-    resize: vertical; /* Allow vertical resizing */
-}
-
-.home p {
-    font-size: 1.2rem;
-}
-
-.blog-post{
-    width: 40%;
-    margin: auto;
-    p{
-        text-align: left;
-        margin: 5px;
-    }
-}
-@media  (max-width: 1024px) {
-    .blog-post{
-        width: 96%;
-        margin: auto;
-    }
-
-}
-.blog-img{
-    width: 100%;
-    margin: auto;
-}
-/* About and Blog pages */
-.about, .blog {
-    text-align: center;
-}
-
-.about p,
-.blog p {
-    font-size: 1.1rem;
-    color: #dcdcdc;
-    margin-bottom: 1.5rem;
 }
 

@@ -1,51 +1,97 @@
 /*Contacts page*/
 .contacts-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100vw;
-    margin: auto;
+    width: 100vw;
+    background-color: #0A1838 !important;
 }
 
-.contacts-heading {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 15px;
-}
+/*.contacts-heading {*/
+/*    font-size: 2rem;*/
+/*    color: #333;*/
+/*    text-align: center;*/
+/*    margin-bottom: 15px;*/
+/*}*/
 
-.contacts-description {
-    font-size: 1.2rem;
-    color: #555;
-    text-align: center;
-    margin-bottom: 30px;
-}
+/*.contacts-description {*/
+/*    font-size: 1.2rem;*/
+/*    color: #555;*/
+/*    text-align: center;*/
+/*    margin-bottom: 30px;*/
+/*}*/
 /*Contacts page*/
 
 /*Job Page*/
 
+/*.job-container {*/
+/*    padding: 20px;*/
+/*    background-color: #f0f0f0;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    max-width: 600px;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.job-heading {*/
+/*    font-size: 2rem;*/
+/*    color: #333;*/
+/*    text-align: center;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.job-description {*/
+/*    font-size: 1.2rem;*/
+/*    color: #004080;*/
+/*    text-align: center;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+/* Pages.css */
+.contacts-heading{
+    text-align: center;
+}
 .job-container {
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
+    background-color: #001f3f; /* Navy background */
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
 }
 
 .job-heading {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d40067; /* Pink for heading */
+    margin-bottom: 1.5rem;
 }
 
 .job-description {
     font-size: 1.2rem;
-    color: #004080;
+    line-height: 1.6;
+    color: #f1f1f1;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .job-container {
+        padding: 2rem 1rem;
+    }
+
+    .job-heading {
+        font-size: 2rem;
+    }
+
+    .job-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #001f3f;
+    color: #f1f1f1;
+    padding: 1rem;
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 0.9rem;
 }
 
 

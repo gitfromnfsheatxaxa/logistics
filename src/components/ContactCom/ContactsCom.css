@@ -1,59 +1,101 @@
-/* ContactsCom.css */
-
 .contacts-container {
-    width: 90%;
+    max-width: 80%; /* Increased width for larger screens */
     margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #0A1838; /* Dark blue background */
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .contacts-header {
-    color: navy; /* Use navy or red if preferred */
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #d40067;
+}
+
+.contacts-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a1b1d6; /* Lighter text for description */
 }
 
 .contacts-form {
-    width: 100%;
-    gap: 15px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-label {
-    font-weight: bold;
-    color: navy; /* Use navy or red if preferred */
+/* Ensure textarea spans both columns */
+textarea {
+    grid-column: 1 / span 2;
+}
+
+.btn-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1E2A48;
+    color: white;
+    box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
-    border-color: #333; /* Use navy or red if preferred */
+    outline: none;
+    border: 2px solid #F5A623;
 }
 
 button {
-    background-color: #d40067; /* Use navy or red if preferred */
-    color: white;
+    background-color: #F5A623; /* Yellow button */
+    color: #0A1838;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 12px 30px;
+    border-radius: 4px;
     cursor: pointer;
-
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #a50050; /* Darker shade for hover effect */
+    background-color: #e6951d; /* Darker yellow on hover */
 }
 
 .status {
+    text-align: center;
+    color: #21C065; /* Green for success message */
     margin-top: 10px;
-    color: green; /* Success message color */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .contacts-form {
+        grid-template-columns: 1fr; /* Stack input fields on mobile */
+    }
+
+    textarea, .btn-container {
+        grid-column: 1 / span 1; /* Ensure textarea and button are full width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts-header {
+        font-size: 1.5rem; /* Slightly smaller text for mobile */
+    }
+
+    button {
+        padding: 10px 20px; /* Smaller button padding for mobile */
+    }
+
+    input, textarea {
+        padding: 10px; /* Adjust input padding for smaller screens */
+    }
 }

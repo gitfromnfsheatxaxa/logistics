@@ -1,22 +1,23 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import './ContactsCom.css'; // Make sure to create this CSS file
+import './ContactsCom.css';
 
 const ContactsCom = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [city, setCity] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
 
     const BOT_TOKEN = '8093316717:AAHTCqtW189UlkgnW8X2SezZzOYSGdKwrx0'; // Your Bot Token
-    const CHAT_ID = '-4508871797'; // Your Chat ID
+    const CHAT_ID = '-4508871797';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setStatus(''); // Clear previous status messages
+        setStatus('');
 
-        const caption = `Contact Request:\nName: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nMessage: ${message}`;
+        const caption = `Contact Request:\nName: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nCity: ${city}\nMessage: ${message}`;
 
         try {
             const messageResponse = await axios.post(
@@ -40,10 +41,11 @@ const ContactsCom = () => {
 
     return (
         <div className="contacts-container">
-            <h1 className="contacts-header">Contact Us</h1>
+            <h1 className="contacts-header">Get in touch with us</h1>
+            <p className="contacts-description">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
             <form onSubmit={handleSubmit} className="contacts-form">
                 <div>
-                    <label htmlFor="name">Your Full Name <span style={{color: 'red'}}>*</span></label>
+                    <label htmlFor="name">Your Name<b>*</b></label>
                     <input
                         type="text"
                         id="name"
@@ -54,7 +56,7 @@ const ContactsCom = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="email">Email <span style={{color: 'red'}}>*</span></label>
+                    <label htmlFor="email">Email<b>*</b></label>
                     <input
                         type="email"
                         id="email"
@@ -65,10 +67,10 @@ const ContactsCom = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="phone">Phone Number <span style={{color: 'red'}}>*</span></label>
+                    <label htmlFor="phoneNumber">Phone Number<b>*</b></label>
                     <input
                         type="tel"
-                        id="phone"
+                        id="phoneNumber"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         required
@@ -76,7 +78,18 @@ const ContactsCom = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="city">City*</label>
+                    <input
+                        type="text"
+                        id="city"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <div className="textarea-container">
+                    <label htmlFor="message">Your Message</label>
                     <textarea
                         id="message"
                         value={message}
@@ -85,10 +98,8 @@ const ContactsCom = () => {
                 </div>
 
                 <div className="btn-container">
-                    <button type="submit">Send Message</button>
-                    <h3 className="status">
-                        {status && <p>{status}</p>}
-                    </h3>
+                    <button type="submit">Submit Message</button>
+                    <h3 className="status">{status && <p>{status}</p>}</h3>
                 </div>
             </form>
         </div>

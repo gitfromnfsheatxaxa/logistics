@@ -129,7 +129,7 @@ const JobCom = () => {
                     placeholder="LinkedIn, Telegram, etc."
                 />
 
-                <label htmlFor="file">Upload Your CV (Required, PDF, DOC, etc.) :</label>
+                <label htmlFor="file">Upload Your CV (PDF, DOC, etc.) :</label>
                 <input
                     type="file"
                     id="file"
