@@ -4,12 +4,16 @@
     padding: 20px;
     background-color: #0A1838; /* Dark background for the news page */
     color: #fff; /* Text color for contrast */
-    max-width: 1200px; /* Max width for large screens */
+    width: 90%; /* Max width for large screens */
     margin: 0 auto; /* Center the container */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
 
+}
+.Nice{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .news-container h1 {
     text-align: center; /* Center the title */
     margin-bottom: 20px; /* Space below the title */

@@ -1,7 +1,6 @@
 import React from 'react';
 import ContactCom from "../../components/ContactCom/ContactCom.jsx";
 import '../Pages.css';
-import FooterCom from "../../components/FooterCom/FooterCom.jsx"; // Assuming you have a CSS file for styling
 
 const Contacts = () => {
     return (
@@ -16,7 +15,6 @@ const Contacts = () => {
                 <ContactCom/>
 
             </div>
-            <FooterCom/>
         </>
 
     )

@@ -5,14 +5,15 @@
 }
 
 .footer {
-    background-color: navy;
+    width: 100%;
+    background-color: #0A1838;
     color: white;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: Arial, sans-serif;
-    margin-top: 50px;
+    margin:10px auto auto auto;
 }
 
 .footer-left {

@@ -1,7 +1,6 @@
 import React from 'react';
 import JobCom from "../../components/JobCom/JobCom.jsx";
 import '../Pages.css';
-import FooterCom from "../../components/FooterCom/FooterCom.jsx"; // Assuming you have a CSS file for styling
 
 const Job = () => {
     return (
@@ -15,7 +14,6 @@ const Job = () => {
                 </p>
                 <JobCom/>
             </div>
-            <FooterCom/>
         </>
 
     );

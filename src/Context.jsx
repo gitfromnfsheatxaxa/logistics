@@ -1,17 +1,28 @@
 // src/context/BlogContext.js
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
-const BlogContext = createContext();
+export const BlogContext = createContext();
 
 export const BlogProvider = ({ children }) => {
-    const [posts, setPosts] = useState([]);
+    const [array, setArray] = useState([]);
+    const url = 'http://127.0.0.1:8090/api/collections/news/records/';
 
-    const addPost = (post) => {
-        setPosts((prevPosts) => [...prevPosts, post]);
+    const getData = async () => {
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            setArray(data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     };
 
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
-        <BlogContext.Provider value={{ posts, addPost }}>
+        <BlogContext.Provider value={{ array: array.items, getData, setArray }}>
             {children}
         </BlogContext.Provider>
     );

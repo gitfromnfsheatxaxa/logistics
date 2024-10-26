@@ -36,12 +36,15 @@ const NavbarCom = () => {
                             <Link className="nav-link" to="/job" onClick={closeMobileMenu}>Job Offer</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className="nav-link" to="/news" onClick={closeMobileMenu}>News</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link className="nav-link" to="/contact" onClick={closeMobileMenu}>Contact</Link>
                         </li>
                     </ul>
                     <div className="nav-actions">
                         <button className="toggle-mobile-button" onClick={handleToggleMobileMenu}>
-                            {mobileMenuOpen ? (
+                        {mobileMenuOpen ? (
                                 <FontAwesomeIcon className="burger" icon={faAlignRight} />
                             ) : (
                                 <FontAwesomeIcon className="burger" icon={faAlignJustify} />
