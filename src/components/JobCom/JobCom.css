@@ -1,19 +1,26 @@
+:root {
+    --color-primary: #FFBE34; /* Primary color */
+    --color-accent-dark: #091242; /* Dark background color */
+    --color-accent: #666C89; /* Accent color for text/placeholder */
+    --color-highlight: #1C1F35; /* Highlight color for headings */
+}
+
 .telegram-form {
-    background-color: #46344e; /* Updated background color */
+    background-color: var(--color-accent-dark); /* Using accent dark color */
     padding: 2rem;
     border-radius: 8px;
-    max-width: 50%;
+    width: 90%;
     margin: 2rem auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: #ffffff; /* White text */
+    color: #F4F4F4; /* Light text */
     font-family: 'Arial', sans-serif;
 }
 
 .apply {
-    color: #db3a34; /* Updated color */
+    color: var(--color-primary); /* Using primary color */
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -24,31 +31,31 @@
 .telegram-form input,
 .telegram-form textarea,
 .telegram-form select {
-    background-color: #5a5560; /* Updated input background */
-    border: 2px solid #9b786f; /* Updated border color */
+    background-color: var(--color-highlight); /* Using highlight color */
+    border: 2px solid var(--color-accent); /* Using accent color */
     padding: 1rem;
     border-radius: 5px;
     font-size: 1rem;
-    color: #ffffff;
+    color: #F4F4F4; /* Light text */
     width: 100%;
 }
 
 .telegram-form input::placeholder,
 .telegram-form textarea::placeholder {
-    color: #9d8d8f; /* Updated placeholder color */
+    color: var(--color-accent); /* Using accent color for placeholder */
 }
 
 /* Label styles */
 .telegram-form label {
-    color: #ffffff;
+    color: #F4F4F4; /* Light text */
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 /* Button styling */
 .telegram-form button {
-    background-color: #db3a34; /* Updated button color */
-    color: #ffffff;
+    background-color: var(--color-primary); /* Using primary color */
+    color: #091242; /* Dark text color for contrast */
     padding: 1rem;
     font-weight: bold;
     border: none;
@@ -58,7 +65,7 @@
 }
 
 .telegram-form button:hover {
-    background-color: #9b786f; /* Darker hover color */
+    background-color: var(--color-accent); /* Darker hover color */
     transform: translateY(-2px); /* Hover effect */
 }
 
@@ -80,5 +87,5 @@
 }
 
 h1 {
-    color: #db3a34; /* Updated header color */
+    color: var(--color-primary); /* Using primary color for heading */
 }

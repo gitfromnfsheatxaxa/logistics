@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServiiceCom.css';
+import {Link} from "react-router-dom";
 
 const services = [
     {
@@ -56,9 +57,8 @@ const ServiceCom = () => {
                     </div>
                 ))}
             </div>
-            <button className="contact-button">Get Started Today!</button>
+
         </div>
     );
 };
-
 export default ServiceCom;

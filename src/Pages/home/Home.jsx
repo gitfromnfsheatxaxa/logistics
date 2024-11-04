@@ -4,12 +4,17 @@ import AboutCom from "../../components/AboutCom/AbourtCom.jsx";
 import JobCom from "../../components/JobCom/JobCom.jsx";
 import ContactCom from "../../components/ContactCom/ContactCom.jsx";
 import Service from "../Service/Service.jsx";
+import HomeCom from "../../components/HomeCom/HomeCom.jsx";
 
 const Home = () => {
     return (
         <div>
-            <AboutCom/>
+            <HomeCom/>
+            <div className="about-home">
+                <AboutCom/>
+            </div>
             <Service/>
+
             <JobCom/>
             <ContactCom/>
         </div>

@@ -1,12 +1,19 @@
+:root {
+    --color-primary: #FFBE34; /* Primary 1 */
+    --color-accent-dark: #091242; /* Primary 2 */
+    --color-accent: #666C89; /* Paragraph Font Color */
+    --color-highlight: #1C1F35; /* Heading Font Color */
+}
+
 /* Contacts Page */
 .contacts-container {
-    width: 100vw;
-    background-color: var(--color-primary); /* Using primary color */
+    width: 90% ;
+    background-color: var(--color-accent-dark); /* Using primary color */
 }
 
 .contacts-heading {
     font-size: 2rem;
-    color: #db3a34; /* Using accent dark color */
+    color: var(--color-primary); /* Using accent dark color */
     text-align: center;
     margin-bottom: 15px;
 }
@@ -23,13 +30,13 @@
     background-color: var(--color-accent-dark); /* Using accent dark color */
     padding: 3rem 2rem;
     text-align: center;
-    color: white; /* Keeping white for text */
+    color: #FFFFFF; /* Keeping white for text */
 }
 
 .job-heading {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--color-highlight); /* Using highlight color */
+    color: var(--color-primary); /* Using highlight color */
     margin-bottom: 1.5rem;
 }
 
@@ -60,7 +67,7 @@
 /* Footer styles */
 footer {
     background-color: var(--color-accent-dark); /* Using accent dark color */
-    color: #f1f1f1; /* Light text */
+    color: #F4F4F4; /* Light text */
     padding: 1rem;
     text-align: center;
     font-size: 0.9rem; /* Slightly smaller font */
@@ -73,7 +80,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full viewport height */
-    background-color: #f8d7da; /* Light red background */
+    background-color: #F8D7DA; /* Light red background */
     text-align: center;
     color: var(--color-accent-dark); /* Using accent dark color */
 }
@@ -92,7 +99,7 @@ footer {
 .go-home-button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff; /* White text */
+    color: #FFFFFF; /* White text */
     background-color: var(--color-highlight); /* Using highlight color */
     border: none;
     border-radius: 5px; /* Rounded corners */
@@ -102,4 +109,7 @@ footer {
 
 .go-home-button:hover {
     background-color: var(--color-accent-dark); /* Using accent dark color on hover */
+}
+.about-home{
+    margin-top: 90vh;
 }

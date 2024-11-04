@@ -1,10 +1,10 @@
 .contacts-container {
-    max-width: 80%; /* Increased width for larger screens */
+    width: 90%;
     margin: auto;
-    padding: 40px;
+    padding: 2rem;
     border-radius: 8px;
-    background-color: #46344e; /* Updated background color */
-    color: #ffffff;
+    background-color: #091242; /* Primary 2 Background */
+    color: #F4F4F4; /* Secondary 1 for general text */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -12,13 +12,13 @@
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #db3a34; /* Updated header color */
+    color: #1C1F35; /* Heading Font Color */
 }
 
 .contacts-description {
     text-align: center;
     margin-bottom: 30px;
-    color: #9d8d8f; /* Updated lighter text for description */
+    color: #666C89; /* Paragraph Font Color for description */
 }
 
 .contacts-form {
@@ -44,19 +44,19 @@ input, textarea {
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background-color: #5a5560; /* Updated input background color */
-    color: #ffffff;
+    background-color: var(--color-highlight); /* Paragraph Font Color for input background */
+    color: #F4F4F4; /* Secondary 1 for input text color */
     box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border: 2px solid #9b786f; /* Updated focus border color */
+    border: 2px solid #FFBE34; /* Primary 1 for focus border */
 }
 
 button {
-    background-color: #9b786f; /* Updated button color */
-    color: #ffffff;
+    background-color: #FFBE34; /* Primary 1 for button */
+    color: #091242; /* Primary 2 for button text */
     border: none;
     padding: 12px 30px;
     border-radius: 4px;
@@ -66,12 +66,12 @@ button {
 }
 
 button:hover {
-    background-color: #db3a34; /* Updated hover color for button */
+    background: linear-gradient(90deg, #FFB629, #FFDA56, #FFD7A6); /* Gradient for button hover */
 }
 
 .status {
     text-align: center;
-    color: #21C065; /* Green for success message, kept as is */
+    color: #21C065; /* Green for success message */
     margin-top: 10px;
 }
 

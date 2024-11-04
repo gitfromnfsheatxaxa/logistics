@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for WebKit browsers */
+}
 body {
     line-height: 1.6;
     margin: 0;
@@ -12,7 +14,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #46344e;
+    background-color: #f4f4f4;
 }
 
 .app{
@@ -30,3 +32,16 @@ ul {
     list-style: none;
 }
 
+.main-app{
+    margin-top: 20vh;
+}
+@media (max-width: 769px) {
+
+        h1,h2,h3,h4,h5,h6{
+            margin-top: 1rem;
+            font-size: 32px;
+        }
+        p{
+            font-size: 17px;
+        }
+}

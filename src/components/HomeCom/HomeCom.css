@@ -1,0 +1,53 @@
+.header-backround{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    background: url("src/assets/pexels-lkloeppel-577696.jpg") center center/cover no-repeat;
+
+}
+.header-linear{
+    width: 100%;
+    background: linear-gradient(91.26deg, #032D5F 19.32%, rgba(9, 18, 66, 0.35) 59.95%);
+    height: 100vh;
+}
+.header-text{
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+}
+.header-text h1{
+    margin-top: 100px;
+    font-family: "Rubik",sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 71.1px;
+    text-align: left;
+
+}
+.header-text p{
+    font-family: "Krub", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.24px;
+    text-align: left;
+    color: #f9f9f9;
+    margin: 2rem 0 ;
+}
+@media (max-width: 769px) {
+    .header-text{
+        width: 95%;
+    }
+    .header-text h1{
+        margin-top: 4rem;
+        font-size: 32px;
+    }
+    .header-text p{
+        font-size: 17px;
+    }
+}

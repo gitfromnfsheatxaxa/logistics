@@ -1,92 +1,101 @@
-:root {
-    --color-primary: #46344e;
-    --color-secondary: #5a5560;
-    --color-accent: #9d8d8f;
-    --color-accent-dark: #9b786f;
-    --color-highlight: #db3a34;
-}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
+/* Container styling */
 .service-com-container {
+    width: 90%;
+    margin: 2rem auto;
     text-align: center;
-    padding: 20px;
-    background-color: var(--color-primary);
-    color: white;
+    padding: 2rem;
+    color: #2a2a2a;
+    font-family: "Rubik", sans-serif;
+    background-color: #ffffff;
 }
 
+/* Title and description */
 .service-com-title {
     font-size: 2.5rem;
-    color: var(--color-highlight);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1C1F35;
 }
 
 .service-com-description {
-    font-size: 1.2rem;
-    color: var(--color-accent);
-    margin: 10px 0 30px;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
 }
 
+/* Service grid */
 .service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .service-com-title {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .service-com-description {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Service item styling */
 .service-item {
-    background-color: var(--color-secondary);
-    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: var(--color-accent-dark);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
 }
 
+.service-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling with different colors */
 .service-title {
+    color: #FFB82B; /* Blue for service titles */
+    margin-bottom: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 29.63px;
+    text-align: left;
     font-size: 1.5rem;
-    color: var(--color-highlight);
 }
 
+.service-title:hover {
+    color: #1C1F35;
+}
+
+/* Service description */
 .service-description {
-    font-size: 1rem;
-    color: var(--color-accent);
+    font-size: 0.9rem;
+    color: #495057;
 }
 
+/* Button styling */
 .contact-button {
-    background-color: var(--color-highlight);
-    color: white;
-    padding: 10px 20px;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #c32a2a;
-}
-
-@media (max-width: 1024px) {
-    .service-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-com-title {
-        font-size: 2rem;
-    }
-
-    .service-com-description {
-        font-size: 1rem;
-    }
+    background-color: #000000; /* Darker shade on hover */
 }

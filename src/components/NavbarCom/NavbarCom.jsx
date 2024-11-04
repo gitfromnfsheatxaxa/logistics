@@ -17,7 +17,7 @@ const NavbarCom = () => {
     };
 
     return (
-        <header className="header">
+        <header className="header-nav">
             <div className="dark-cyan-background" />
             <div className="container">
                 <nav className="nav">

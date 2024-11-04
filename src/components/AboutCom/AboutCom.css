@@ -1,7 +1,10 @@
 .about-container {
+
+    width: 90%;
+    margin: auto;
     padding: 20px;
-    background-color: #46344e; /* Dark background */
-    color: #fff; /* White text for contrast */
+    background-color: #f4f4f4; /* Primary 2 Background */
+    color: #F4F4F4; /* Secondary 1 for text */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -9,18 +12,20 @@
 .about-heading {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    color: #FFB82B; /* Heading Font Color */
 }
 
 .sub-heading {
     font-size: 2rem;
-    color: #db3a34; /* Pink for subheadings */
+    color: #FFBE34; /* Primary 1 for subheadings */
     margin-top: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .about-description {
-    font-size: 1.2rem;
-    color: #fff; /* White text */
+    font-size: 1.1rem;
+    color: #666C89; /* Paragraph Font Color */
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -33,12 +38,12 @@
 .solutions-list li {
     margin-bottom: 10px;
     font-size: 1rem;
-    color: #f1f1f1; /* Light gray for list items */
+    color: #666C89; /* Paragraph Font Color for list items */
 }
 
 .contact-button {
-    background-color: #5a5560; /* Pink background */
-    color: #fff;
+    background-color: #FFB629; /* Gradient color */
+    color: #091242; /* Primary 2 for contrast */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -47,5 +52,5 @@
 }
 
 .contact-button:hover {
-    background-color: #a50050; /* Darker pink on hover */
+    background-color: #FFD7A6; /* Lighter gradient color on hover */
 }

@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #FFBE34; /* Primary 1 */
+    --color-accent-dark: #091242; /* Primary 2 */
+    --color-accent: #666C89; /* Paragraph Font Color */
+    --color-highlight: #1C1F35; /* Heading Font Color */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +12,10 @@
 }
 
 .footer {
+    gap: 1rem;
     width: 100%;
-    background-color: #46344e; /* Updated background color */
-    color: #ffffff;
+    background-color: var(--color-accent-dark); /* Using accent dark color */
+    color: #F4F4F4; /* Light text */
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -25,17 +33,17 @@
 .footer-logo {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #db3a34; /* Updated logo color */
+    color: var(--color-primary); /* Using primary color */
 }
 
 .footer-description {
     margin-bottom: 20px;
-    color: #9d8d8f; /* Updated description text color */
+    color: var(--color-accent); /* Using accent color */
 }
 
 .footer-contact p {
     margin: 5px 0;
-    color: #9d8d8f; /* Updated contact text color */
+    color: var(--color-accent); /* Using accent color */
 }
 
 .footer-links {
@@ -51,7 +59,7 @@
 .links-section h3 {
     margin-bottom: 15px;
     font-size: 18px;
-    color: #9b786f; /* Updated section heading color */
+    color: var(--color-primary); /* Using highlight color */
 }
 
 .links-section ul {
@@ -63,14 +71,15 @@
 }
 
 .links-section ul li a {
-    color: #9d8d8f; /* Updated link color */
+    color: var(--color-accent); /* Using accent color */
     text-decoration: none;
 }
 
 .links-section ul li a:hover {
-    color: #ffffff; /* Hover color remains white for contrast */
+    color: #FFFFFF; /* Hover color remains white for contrast */
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
