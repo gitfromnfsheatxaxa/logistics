@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import './ContactsCom.css';
 
@@ -41,9 +41,7 @@ const ContactsCom = () => {
 
     return (
         <div className="contacts-container">
-            <h1 className="contacts-header">Get in touch with us</h1>
-            <p className="contacts-description">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
-            <form onSubmit={handleSubmit} className="contacts-form">
+             <form onSubmit={handleSubmit} className="contacts-form">
                 <div>
                     <label htmlFor="name">Your Name<b>*</b></label>
                     <input

@@ -1,0 +1,92 @@
+:root {
+    --color-primary: #46344e;
+    --color-secondary: #5a5560;
+    --color-accent: #9d8d8f;
+    --color-accent-dark: #9b786f;
+    --color-highlight: #db3a34;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.service-com-container {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.service-com-title {
+    font-size: 2.5rem;
+    color: var(--color-highlight);
+}
+
+.service-com-description {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin: 10px 0 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-item {
+    background-color: var(--color-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--color-accent-dark);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: var(--color-highlight);
+}
+
+.service-description {
+    font-size: 1rem;
+    color: var(--color-accent);
+}
+
+.contact-button {
+    background-color: var(--color-highlight);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #c32a2a;
+}
+
+@media (max-width: 1024px) {
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-com-title {
+        font-size: 2rem;
+    }
+
+    .service-com-description {
+        font-size: 1rem;
+    }
+}

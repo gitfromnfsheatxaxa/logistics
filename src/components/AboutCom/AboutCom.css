@@ -1,42 +1,51 @@
-/* AboutCom.css */
-
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: #46344e; /* Dark background */
+    color: #fff; /* White text for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.about-content {
-    max-width: 600px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.about-header {
-    color: #333; /* You can use navy or red as preferred */
+.about-heading {
     font-size: 2.5rem;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    color: #db3a34; /* Pink for subheadings */
+    margin-top: 20px;
 }
 
 .about-description {
-    color: #555; /* Adjust for contrast */
     font-size: 1.2rem;
+    color: #fff; /* White text */
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.about-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.solutions-list {
+    list-style: none;
+    padding: 0;
 }
 
-.about-img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.solutions-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #f1f1f1; /* Light gray for list items */
+}
+
+.contact-button {
+    background-color: #5a5560; /* Pink background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #a50050; /* Darker pink on hover */
 }

@@ -6,14 +6,14 @@
 
 .footer {
     width: 100%;
-    background-color: #0A1838;
-    color: white;
+    background-color: #46344e; /* Updated background color */
+    color: #ffffff;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: Arial, sans-serif;
-    margin:10px auto auto auto;
+    margin: 10px auto auto auto;
 }
 
 .footer-left {
@@ -25,14 +25,17 @@
 .footer-logo {
     font-size: 24px;
     margin-bottom: 15px;
+    color: #db3a34; /* Updated logo color */
 }
 
 .footer-description {
     margin-bottom: 20px;
+    color: #9d8d8f; /* Updated description text color */
 }
 
 .footer-contact p {
     margin: 5px 0;
+    color: #9d8d8f; /* Updated contact text color */
 }
 
 .footer-links {
@@ -48,6 +51,7 @@
 .links-section h3 {
     margin-bottom: 15px;
     font-size: 18px;
+    color: #9b786f; /* Updated section heading color */
 }
 
 .links-section ul {
@@ -59,12 +63,12 @@
 }
 
 .links-section ul li a {
-    color: #ddd;
+    color: #9d8d8f; /* Updated link color */
     text-decoration: none;
 }
 
 .links-section ul li a:hover {
-    color: #fff;
+    color: #ffffff; /* Hover color remains white for contrast */
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 .telegram-form {
-    background-color: #0A1931; /* Dark blue background */
+    background-color: #46344e; /* Updated background color */
     padding: 2rem;
     border-radius: 8px;
     max-width: 50%;
@@ -8,12 +8,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: #FFFFFF; /* White text */
+    color: #ffffff; /* White text */
     font-family: 'Arial', sans-serif;
 }
 
 .apply {
-    color: #d40067; /* Slightly off-white color */
+    color: #db3a34; /* Updated color */
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -24,31 +24,31 @@
 .telegram-form input,
 .telegram-form textarea,
 .telegram-form select {
-    background-color: #0A1931; /* Dark blue for inputs */
-    border: 2px solid #3E497A; /* Lighter blue borders */
+    background-color: #5a5560; /* Updated input background */
+    border: 2px solid #9b786f; /* Updated border color */
     padding: 1rem;
     border-radius: 5px;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 100%;
 }
 
 .telegram-form input::placeholder,
 .telegram-form textarea::placeholder {
-    color: #D9D9D9; /* Light gray placeholders */
+    color: #9d8d8f; /* Updated placeholder color */
 }
 
 /* Label styles */
 .telegram-form label {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-/* Button styling similar to the image */
+/* Button styling */
 .telegram-form button {
-    background-color: #FFB703; /* Yellow button */
-    color: #0A1931; /* Dark text */
+    background-color: #db3a34; /* Updated button color */
+    color: #ffffff;
     padding: 1rem;
     font-weight: bold;
     border: none;
@@ -58,8 +58,8 @@
 }
 
 .telegram-form button:hover {
-    background-color: #FB8500; /* Darker orange for hover */
-    transform: translateY(-2px); /* Slight hover effect */
+    background-color: #9b786f; /* Darker hover color */
+    transform: translateY(-2px); /* Hover effect */
 }
 
 /* Responsive design for mobile */
@@ -78,6 +78,7 @@
         font-size: 1.5rem; /* Adjust font size for mobile */
     }
 }
-h1{
-    color: #d40067;
+
+h1 {
+    color: #db3a34; /* Updated header color */
 }

@@ -39,6 +39,9 @@ const NavbarCom = () => {
                             <Link className="nav-link" to="/news" onClick={closeMobileMenu}>News</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className="nav-link" to="/service" onClick={closeMobileMenu}>Service</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link className="nav-link" to="/contact" onClick={closeMobileMenu}>Contact</Link>
                         </li>
                     </ul>

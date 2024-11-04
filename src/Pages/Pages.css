@@ -1,102 +1,72 @@
-/*Contacts page*/
+/* Contacts Page */
 .contacts-container {
     width: 100vw;
-    background-color: #0A1838 !important;
+    background-color: var(--color-primary); /* Using primary color */
 }
 
-/*.contacts-heading {*/
-/*    font-size: 2rem;*/
-/*    color: #333;*/
-/*    text-align: center;*/
-/*    margin-bottom: 15px;*/
-/*}*/
-
-/*.contacts-description {*/
-/*    font-size: 1.2rem;*/
-/*    color: #555;*/
-/*    text-align: center;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-/*Contacts page*/
-
-/*Job Page*/
-
-/*.job-container {*/
-/*    padding: 20px;*/
-/*    background-color: #f0f0f0;*/
-/*    border-radius: 8px;*/
-/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-/*    max-width: 600px;*/
-/*    margin: auto;*/
-/*}*/
-
-/*.job-heading {*/
-/*    font-size: 2rem;*/
-/*    color: #333;*/
-/*    text-align: center;*/
-/*    margin-bottom: 15px;*/
-/*}*/
-
-/*.job-description {*/
-/*    font-size: 1.2rem;*/
-/*    color: #004080;*/
-/*    text-align: center;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-/* Pages.css */
-.contacts-heading{
+.contacts-heading {
+    font-size: 2rem;
+    color: #db3a34; /* Using accent dark color */
     text-align: center;
+    margin-bottom: 15px;
 }
+
+.contacts-description {
+    font-size: 1.2rem;
+    color: var(--color-accent); /* Using accent color */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Job Page */
 .job-container {
-    background-color: #001f3f; /* Navy background */
+    background-color: var(--color-accent-dark); /* Using accent dark color */
     padding: 3rem 2rem;
     text-align: center;
-    color: white;
+    color: white; /* Keeping white for text */
 }
 
 .job-heading {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #d40067; /* Pink for heading */
+    color: var(--color-highlight); /* Using highlight color */
     margin-bottom: 1.5rem;
 }
 
 .job-description {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #f1f1f1;
-    max-width: 700px;
-    margin: 0 auto 2.5rem auto;
+    color: var(--color-accent); /* Using accent color */
+    max-width: 700px; /* Max width for readability */
+    margin: 0 auto 2.5rem auto; /* Centered with margin below */
 }
 
-/* Responsive styles */
+/* Responsive styles for Job Page */
 @media (max-width: 768px) {
     .job-container {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem; /* Less padding on smaller screens */
     }
 
     .job-heading {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller heading size */
     }
 
     .job-description {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 1rem; /* Smaller description size */
+        padding: 0 1rem; /* Padding for smaller screens */
     }
 }
 
 /* Footer styles */
 footer {
-    background-color: #001f3f;
-    color: #f1f1f1;
+    background-color: var(--color-accent-dark); /* Using accent dark color */
+    color: #f1f1f1; /* Light text */
     padding: 1rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Slightly smaller font */
 }
 
-
-/*Not found 404*/
-
+/* Not Found (404) Page */
 .not-found-container {
     display: flex;
     flex-direction: column;
@@ -105,37 +75,31 @@ footer {
     height: 100vh; /* Full viewport height */
     background-color: #f8d7da; /* Light red background */
     text-align: center;
-    color: navy; /* Dark red text */
-
+    color: var(--color-accent-dark); /* Using accent dark color */
 }
 
 .not-found-heading {
-    font-size: 5rem;
-    margin-bottom: 20px;
+    font-size: 5rem; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
 }
 
 .not-found-message {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: navy;
+    font-size: 1.5rem; /* Message size */
+    margin-bottom: 30px; /* Space below message */
+    color: var(--color-accent-dark); /* Using accent dark color */
 }
 
 .go-home-button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #d40067; /* Blue background */
+    color: #fff; /* White text */
+    background-color: var(--color-highlight); /* Using highlight color */
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 .go-home-button:hover {
-    background-color: #a50050; /* Darker blue on hover */
+    background-color: var(--color-accent-dark); /* Using accent dark color on hover */
 }
-
-
-/*Not found 404*/
-
-/*Job Page*/

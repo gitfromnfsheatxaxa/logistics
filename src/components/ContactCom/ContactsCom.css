@@ -3,8 +3,8 @@
     margin: auto;
     padding: 40px;
     border-radius: 8px;
-    background-color: #0A1838; /* Dark blue background */
-    color: white;
+    background-color: #46344e; /* Updated background color */
+    color: #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -12,13 +12,13 @@
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #d40067;
+    color: #db3a34; /* Updated header color */
 }
 
 .contacts-description {
     text-align: center;
     margin-bottom: 30px;
-    color: #a1b1d6; /* Lighter text for description */
+    color: #9d8d8f; /* Updated lighter text for description */
 }
 
 .contacts-form {
@@ -44,19 +44,19 @@ input, textarea {
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background-color: #1E2A48;
-    color: white;
+    background-color: #5a5560; /* Updated input background color */
+    color: #ffffff;
     box-sizing: border-box;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border: 2px solid #F5A623;
+    border: 2px solid #9b786f; /* Updated focus border color */
 }
 
 button {
-    background-color: #F5A623; /* Yellow button */
-    color: #0A1838;
+    background-color: #9b786f; /* Updated button color */
+    color: #ffffff;
     border: none;
     padding: 12px 30px;
     border-radius: 4px;
@@ -66,12 +66,12 @@ button {
 }
 
 button:hover {
-    background-color: #e6951d; /* Darker yellow on hover */
+    background-color: #db3a34; /* Updated hover color for button */
 }
 
 .status {
     text-align: center;
-    color: #21C065; /* Green for success message */
+    color: #21C065; /* Green for success message, kept as is */
     margin-top: 10px;
 }
 
