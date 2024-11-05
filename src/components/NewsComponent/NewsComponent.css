@@ -8,7 +8,7 @@
     width: 100%;
     border: 1px solid #dfdfdf;
     margin-bottom: 30px;
-    background: var(--color-accent-dark);
+    background: #8D99AE !important;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
 
 .product-time {
     font-size: 0.7rem;
-    color: #0A1838;
+    color: var(--color-accent);
 }
 
 .product-title {

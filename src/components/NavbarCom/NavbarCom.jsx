@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { faAlignJustify, faAlignRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './NavbarCom.css'; // Import the CSS file
+import Logo from '/LOGO_MO_GLOBE_transparent.png';
 
 const NavbarCom = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,8 +23,8 @@ const NavbarCom = () => {
             <div className="container">
                 <nav className="nav">
                     <Link className="Logo" to="/">
-                        {/*<img src={[currentLogoIndex]} alt="Logo" className="logo-image" />*/}
-                        logo
+                        <img src={Logo} alt="Logo" className="logo-image" />
+
                     </Link>
                     <ul className={`nav-list ${mobileMenuOpen ? 'open' : ''}`}>
                         <li className="nav-item">

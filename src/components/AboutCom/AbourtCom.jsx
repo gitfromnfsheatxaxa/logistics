@@ -1,41 +1,44 @@
 import React from 'react';
 import './AboutCom.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AboutCom = () => {
     return (
         <div className="about-container">
-            <h1 className="about-heading">Streamline Your Operations with Our Comprehensive Solutions</h1>
+            <h1 className="about-heading">Streamline Your Operations with MO GLOBE TRUCKING</h1>
             <p className="about-description">
-                MO GLOBE TRUCKING Team understands that running a successful trucking business requires a multitude of moving parts to function seamlessly. That’s why we offer turnkey services designed to simplify your operations and maximize efficiency. From logistics management to regulatory compliance, our all-in-one solutions cater to every aspect of your trucking needs.
+                At MO GLOBE TRUCKING, we understand that reliable freight transportation is essential to your success. With years of experience in the industry, our team is committed to providing tailored, cost-effective solutions designed to meet your specific shipping needs. Our comprehensive services help simplify your logistics while ensuring your freight arrives on time, every time.
             </p>
-            <h2 className="sub-heading">What Are Turnkey Services?</h2>
+            <h2 className="sub-heading">Why Choose MO GLOBE TRUCKING?</h2>
             <p className="about-description">
-                Turnkey services provide you with a complete package of solutions that are ready to implement from day one. Our approach allows you to focus on what you do best—driving your business forward—while we handle the details.
+                MO GLOBE TRUCKING stands out for its reliable service and exceptional customer care. Whether you need full truckload (FTL) or less-than-truckload (LTL) shipping, refrigerated transport, or expedited freight, we have the experience and resources to manage all aspects of your logistics.
             </p>
-            <h2 className="sub-heading">Our Turnkey Solutions Include:</h2>
+            <h2 className="sub-heading">Our Key Features Include:</h2>
             <ul className="solutions-list">
-                <li>Fleet Management: We take care of everything from vehicle maintenance scheduling to route optimization, ensuring your fleet operates at peak performance.</li>
-                <li>Logistics Coordination: Our logistics experts manage the entire supply chain process, optimizing routes and load planning to reduce costs and improve delivery times.</li>
-                <li>Compliance Management: Stay compliant with industry regulations effortlessly. We handle everything from safety audits to regulatory reporting, so you can focus on your core operations.</li>
-                <li>Driver Recruitment and Training: We provide a comprehensive recruitment process, along with specialized training programs to ensure your drivers are well-prepared and compliant.</li>
-                <li>Accounting and Financial Services: Our accounting experts manage bookkeeping, invoicing, payroll, and tax preparation, providing you with clear financial insights and peace of mind.</li>
-                <li>Safety Programs: Implement robust safety measures with our tailored safety consulting services. We help you develop training programs and safety protocols that protect your drivers and cargo.</li>
-                <li>Technology Integration: We provide cutting-edge technology solutions, including fleet tracking, electronic logging devices (ELDs), and logistics software to enhance your operational efficiency.</li>
+                <li><strong>Dependable Service:</strong> We guarantee that your freight arrives on schedule, supported by a dedicated team of logistics experts and experienced drivers.</li>
+                <li><strong>Experienced Professionals:</strong> Our team of skilled drivers and logistics experts are trained to safely handle all types of cargo, ensuring a smooth and secure transport process.</li>
+                <li><strong>Advanced Technology:</strong> We use state-of-the-art tracking systems to provide real-time 24/7 updates on your shipment’s status, so you’re always informed.</li>
+                <li><strong>Comprehensive Solutions:</strong> Whether you're looking for long-haul trucking, refrigerated transport, or expedited freight, we offer a full range of services to suit your needs.</li>
             </ul>
-            <h2 className="sub-heading">Why Choose Our Turnkey Services?</h2>
+            <h2 className="sub-heading">Our Services Include:</h2>
+            <ul className="solutions-list">
+                <li>Full Truckload (FTL) and Less-than-Truckload (LTL) Shipping</li>
+                <li>Refrigerated Transport for temperature-sensitive cargo</li>
+                <li>Expedited Freight Services for time-critical deliveries</li>
+                <li>Logistics and Supply Chain Management to streamline operations</li>
+            </ul>
+            <h2 className="sub-heading">Why Choose Us?</h2>
             <p className="about-description">
-                <strong>Efficiency:</strong> Our integrated approach saves you time and reduces operational complexities, allowing you to focus on growth.<br/>
-                <strong>Expertise:</strong> Benefit from our industry knowledge and experience. We understand the unique challenges of the trucking industry and tailor our services accordingly.<br/>
-                <strong>Cost-Effective:</strong> By consolidating services, you can reduce overhead costs and improve your bottom line.
+                <strong>Efficiency:</strong> Our streamlined processes ensure your freight moves seamlessly from origin to destination.<br/>
+                <strong>Reliability:</strong> With a proven track record of on-time deliveries, you can count on us to get your goods to their destination as promised.<br/>
+                <strong>Cost-Effectiveness:</strong> We provide flexible, tailored solutions to meet your budget, helping you save on transportation costs while maintaining high service standards.
             </p>
             <h2 className="sub-heading">Get Started Today!</h2>
             <p className="about-description">
-                Transform your trucking operations with our turnkey services. Contact us for a consultation and discover how we can help streamline your business and drive success.
+                Let MO GLOBE TRUCKING be your trusted partner in freight transportation. Contact us today for a free quote or to discuss how our solutions can meet your logistics needs.
             </p>
             <Link to="/contact">
                 <button className="contact-button">Contact Us</button>
-
             </Link>
         </div>
     );

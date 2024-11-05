@@ -2,7 +2,7 @@
     gap: 1rem;
     width: 100%;
     background-color: var(--color-accent-dark); /* Using accent dark color */
-    color: #F4F4F4; /* Light text */
+    color: var(--color-accent); /* Light text */
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@
 }
 
 .links-section ul li a:hover {
-    color: #FFFFFF; /* Hover color remains white for contrast */
+    color: var(--color-highlight); /* Hover color remains white for contrast */
 }
 
 /* Responsive styling */
