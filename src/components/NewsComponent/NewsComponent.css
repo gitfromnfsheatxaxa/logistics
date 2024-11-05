@@ -8,7 +8,7 @@
     width: 100%;
     border: 1px solid #dfdfdf;
     margin-bottom: 30px;
-    background: white;
+    background: var(--color-accent-dark);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -34,14 +34,14 @@
 }
 
 .image-card img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 85%;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
 }
 
 .image-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .text-box {
@@ -55,7 +55,7 @@
 }
 
 .product-name {
-    color: #3c3b6e; /* Dark blue */
+    color: var(--color-accent); /* Dark blue */
     font-size: 18px;
     text-align: left;
     cursor: pointer;
@@ -75,5 +75,5 @@
 }
 
 .product-title {
-    color: #3c3b6e; /* Dark blue */
+    color: var(--color-primary); /* Dark blue */
 }

@@ -76,8 +76,8 @@ const JobCom = () => {
 
     return (
         <>
-            <h1 className="apply">Apply for the Company</h1>
             <form onSubmit={handleSubmit} className="telegram-form">
+                <h1 className="apply">Apply for the Company</h1>
 
                 <label htmlFor="name">Write your Full name <span style={{color: 'red'}}>*</span></label>
                 <input

@@ -41,7 +41,9 @@ const ContactsCom = () => {
 
     return (
         <div className="contacts-container">
-             <form onSubmit={handleSubmit} className="contacts-form">
+            <h1 className="apply">Contact Us</h1>
+
+            <form onSubmit={handleSubmit} className="contacts-form">
                 <div>
                     <label htmlFor="name">Your Name<b>*</b></label>
                     <input

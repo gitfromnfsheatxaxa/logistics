@@ -4,21 +4,22 @@
 }
 
 .dark-cyan-background {
-    background-color: #ffffff; /* Background remains white */
-    position: fixed;
-    width: 80%;
-    height: 100%;
-    opacity: 0.5;
-    z-index: -1;
+    /*background-color: rgba(10, 24, 56, 0.5);*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*!*opacity: 0.5;*!*/
+    /*z-index: -1;*/
 }
 
 .container {
+    width: 100%;
     position: fixed;
     background: #0A1838;
     top: 0;
     z-index: 10;
-    width: 90%;
-    margin: 2rem auto;
+    margin: auto;
+    padding: 20px;
 }
 
 .nav {

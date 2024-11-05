@@ -1,6 +1,6 @@
 :root {
     --color-primary: #FFBE34; /* Primary 1 */
-    --color-accent-dark: #091242; /* Primary 2 */
+    --color-accent-dark: rgba(10, 24, 56, 0.8); /* Primary 2 */
     --color-accent: #666C89; /* Paragraph Font Color */
     --color-highlight: #1C1F35; /* Heading Font Color */
 }
@@ -8,7 +8,7 @@
 /* Contacts Page */
 .contacts-container {
     width: 90% ;
-    background-color: var(--color-accent-dark); /* Using primary color */
+        /*background-color: var(--color-accent-dark); !* Using primary color *!*/
 }
 
 .contacts-heading {
@@ -28,6 +28,7 @@
 /* Job Page */
 .job-container {
     background-color: var(--color-accent-dark); /* Using accent dark color */
+    /*background-color: rgba(10, 24, 56, 0.9);*/
     padding: 3rem 2rem;
     text-align: center;
     color: #FFFFFF; /* Keeping white for text */
@@ -111,5 +112,5 @@ footer {
     background-color: var(--color-accent-dark); /* Using accent dark color on hover */
 }
 .about-home{
-    margin-top: 90vh;
+    margin-top: 100vh;
 }

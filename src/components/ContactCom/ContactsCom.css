@@ -1,9 +1,9 @@
 .contacts-container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 2rem;
     border-radius: 8px;
-    background-color: #091242; /* Primary 2 Background */
+    background-color: var(--color-accent-dark); /* Primary 2 Background */
     color: #F4F4F4; /* Secondary 1 for general text */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }

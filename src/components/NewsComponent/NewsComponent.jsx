@@ -5,7 +5,7 @@ const AdminCom = ({ el }) => {
     const imageUrl = `http://127.0.0.1:8090/api/files/${el.collectionId}/${el.id}/${el.image[0]}`;
 
     return (
-        <div className="container">
+        <div className="container-news">
             <div className="main-image" key={el?.id}>
                 <div className="image-card">
                     <img src={imageUrl} alt={el.title} className="news-image" />

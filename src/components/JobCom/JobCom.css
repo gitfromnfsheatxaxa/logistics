@@ -1,10 +1,3 @@
-:root {
-    --color-primary: #FFBE34; /* Primary color */
-    --color-accent-dark: #091242; /* Dark background color */
-    --color-accent: #666C89; /* Accent color for text/placeholder */
-    --color-highlight: #1C1F35; /* Highlight color for headings */
-}
-
 .telegram-form {
     background-color: var(--color-accent-dark); /* Using accent dark color */
     padding: 2rem;

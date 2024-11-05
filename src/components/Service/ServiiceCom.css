@@ -8,7 +8,7 @@
     padding: 2rem;
     color: #2a2a2a;
     font-family: "Rubik", sans-serif;
-    background-color: #ffffff;
+    background-color: var(--color-accent-dark);
 }
 
 /* Title and description */
@@ -16,7 +16,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #1C1F35;
+    color: var(--color-primary) !important;
 }
 
 .service-com-description {
@@ -52,11 +52,14 @@
 
 /* Service item styling */
 .service-item {
-    background-color: #f9f9f9;
+    background-color: var(--color-highlight);
     border: 1px solid #eaeaea;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: box-shadow 0.3s ease;
 }
 
@@ -76,7 +79,7 @@
 }
 
 .service-title:hover {
-    color: #1C1F35;
+    color: var(--color-accent);
 }
 
 /* Service description */
@@ -85,17 +88,3 @@
     color: #495057;
 }
 
-/* Button styling */
-.contact-button {
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background-color: #000000; /* Darker shade on hover */
-}
