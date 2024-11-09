@@ -3,7 +3,7 @@ import ServiceCom from "../../components/Service/ServiceCom.jsx";
 
 const Service = () => {
     return (
-        <div>
+        <div className="service-page">
             <ServiceCom/>
         </div>
     );

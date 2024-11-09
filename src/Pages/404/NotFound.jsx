@@ -1,8 +1,6 @@
-// NotFound.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Pages.css';
-import FooterCom from "../../components/FooterCom/FooterCom.jsx"; // Ensure the CSS file is correctly referenced
+import FooterCom from '../../components/FooterCom/FooterCom.jsx';
 
 const NotFound = () => {
     const navigate = useNavigate();
@@ -14,13 +12,16 @@ const NotFound = () => {
     return (
         <>
             <div className="not-found-container">
-                <h1 className="not-found-heading">404</h1>
-                <p className="not-found-message">Oops! The page you are looking for does not exist.</p>
+                <h1 className="not-found-heading">4 <h1 className="not-found-heading-0">0</h1>   4</h1>
+                <p className="not-found-subheading">Oops! Page not found.</p>
+                <p className="not-found-description">
+                    Let’s get you to where you need to be.
+                </p>
                 <button className="go-home-button" onClick={handleGoHome}>
-                    Go to Home
+                    Back to home
                 </button>
             </div>
-            <FooterCom/>
+            <FooterCom />
         </>
     );
 };

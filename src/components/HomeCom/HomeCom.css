@@ -3,7 +3,7 @@
     position: absolute;
     top: 10%;
     width: 100%;
-    background: var(--color-accent-dark);
+    background: linear-gradient(90.93deg, #032D5F 18.18%, rgba(9, 18, 66, 0.2) 64.92%);
     height: 100vh;
 }
 .header-text{

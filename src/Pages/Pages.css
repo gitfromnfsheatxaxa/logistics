@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #FFB82B; /* Title */
-    --color-accent-dark: rgba(23, 37, 90, 0.8); /* backround*/
-    --color-accent: #EDF2F4; /* Paragraph Font Color */
-    --color-highlight: #8D99AE; /* Heading Font Color */
+    --color-primary: #FFBE34; /* Title */
+    --color-accent-dark: #091242; /* backround*/
+    --color-accent: #f4f4f4; /* Paragraph Font Color */
+    --color-highlight: #f9f9f9; /* Heading Font Color */
 }
 
 /* Contacts Page */
@@ -74,43 +74,67 @@ footer {
     font-size: 0.9rem; /* Slightly smaller font */
 }
 
-/* Not Found (404) Page */
+
+
 .not-found-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Full viewport height */
-    background-color: #F8D7DA; /* Light red background */
+    background-color: #ffffff; /* White background */
     text-align: center;
-    color: var(--color-accent-dark); /* Using accent dark color */
+    color: var(--color-accent-dark);
 }
 
 .not-found-heading {
-    font-size: 5rem; /* Large heading */
-    margin-bottom: 20px; /* Space below heading */
+    display: flex;
+    font-size: 8rem; /* Large heading */
+    font-weight: bold;
+    color: var(--color-accent-dark);
+    margin: 0; /* Remove default margin */
+}
+.not-found-heading-0{
+    color: var(--color-primary);    display: flex;
+    font-size: 8rem; /* Large heading */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+
+}
+.not-found-subheading {
+    font-size: 1.5rem;
+    color: var(--color-accent-dark);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.not-found-message {
-    font-size: 1.5rem; /* Message size */
-    margin-bottom: 30px; /* Space below message */
-    color: var(--color-accent-dark); /* Using accent dark color */
+.not-found-description {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
 }
 
 .go-home-button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
-    color: #FFFFFF; /* White text */
-    background-color: var(--color-highlight); /* Using highlight color */
+    color: #ffffff;
+    background-color: var(--color-primary);
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transition for hover effect */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .go-home-button:hover {
-    background-color: var(--color-accent-dark); /* Using accent dark color on hover */
+    background-color: var(--color-accent-dark);
+    color: var(--color-primary);
 }
+
 .about-home{
     margin-top: 100vh;
+}
+.service-page{
+    background-color: var(--color-highlight);
 }

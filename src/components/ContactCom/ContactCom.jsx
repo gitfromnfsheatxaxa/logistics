@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './ContactsCom.css';
-
+import icon1 from '../../../public/Icon.png';
+import icon2 from '../../../public/Icon (1).png';
+import icon3 from '../../../public/Icon (2).png';
 const ContactsCom = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -24,7 +26,7 @@ const ContactsCom = () => {
                 `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
                 {
                     chat_id: CHAT_ID,
-                    text: caption
+                    text: caption,
                 }
             );
 
@@ -41,67 +43,65 @@ const ContactsCom = () => {
 
     return (
         <div className="contacts-container">
-            <h1 className="apply">Contact Us</h1>
+            <div className="contacts-header">
+                <h1>Contact Us</h1>
+                <p>Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.</p>
+            </div>
+
+            <div className="contacts-info">
+                <div className="contact-item">
+                    <img src={icon1} alt=""/>
+                    <p>Contact@logistics.com</p>
+                </div>
+                <div className="contact-item">
+                    <img src={icon2} alt=""/>
+
+                    <p>(00) 112 365 489</p>
+                </div>
+                <div className="contact-item">
+                    <img src={icon3} alt=""/>
+
+                    <p>Mon – Sat 9.00 – 18.00<br/>Sunday Closed</p>
+                </div>
+            </div>
 
             <form onSubmit={handleSubmit} className="contacts-form">
-                <div>
-                    <label htmlFor="name">Your Name<b>*</b></label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <div>
-                    <label htmlFor="email">Email<b>*</b></label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <div>
-                    <label htmlFor="phoneNumber">Phone Number<b>*</b></label>
-                    <input
-                        type="tel"
-                        id="phoneNumber"
-                        value={phoneNumber}
-                        onChange={(e) => setPhoneNumber(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <div>
-                    <label htmlFor="city">City*</label>
-                    <input
-                        type="text"
-                        id="city"
-                        value={city}
-                        onChange={(e) => setCity(e.target.value)}
-                        required
-                    />
-                </div>
-
-                <div className="textarea-container">
-                    <label htmlFor="message">Your Message</label>
-                    <textarea
-                        id="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    />
-                </div>
-
-                <div className="btn-container">
-                    <button type="submit">Submit Message</button>
-                    <h3 className="status">{status && <p>{status}</p>}</h3>
-                </div>
+                <input
+                    type="text"
+                    placeholder="Your name*"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+                <input
+                    type="email"
+                    placeholder="Email*"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+                <input
+                    type="tel"
+                    placeholder="Phone Number*"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    required
+                />
+                <input
+                    type="text"
+                    placeholder="City*"
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    required
+                />
+                <textarea
+                    placeholder="Your Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+                <button type="submit">Submit Message</button>
             </form>
+            <h3 className="status">{status && <p>{status}</p>}</h3>
         </div>
     );
 };

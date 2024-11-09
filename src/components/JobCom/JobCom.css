@@ -46,20 +46,23 @@
 }
 
 /* Button styling */
-.telegram-form button {
+button {
     background-color: var(--color-primary); /* Using primary color */
-    color: var(--color-accent); /* Dark text color for contrast */
-    padding: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
+
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 12px;
+    color: var(--color-accent-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
 }
 
-.telegram-form button:hover {
+ button:hover {
     background-color: var(--color-accent-dark); /* Darker hover color */
     transform: translateY(-2px); /* Hover effect */
+     color: var(--color-primary);
 }
 
 /* Responsive design for mobile */

@@ -1,24 +1,47 @@
+:root {
+    --color-primary: #FFBE34;
+    --color-accent-dark: #091242;
+    --color-accent: #f4f4f4;
+    --color-highlight: #f9f9f9;
+}
+
 .contacts-container {
-    width: 100%;
+
     margin: auto;
     padding: 2rem;
     border-radius: 8px;
-    background-color: var(--color-accent-dark); /* Primary 2 Background */
-    color: var(--color-accent); /* Secondary 1 for general text */
+    background-color: var(--color-accent-dark);
+    color: var(--color-accent);
+    text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.contacts-header {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: var(--color-accent); /* Heading Font Color */
+.contacts-header h1 {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.contacts-description {
+
+.contacts-header p {
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+}
+
+.contacts-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
     text-align: center;
-    margin-bottom: 30px;
-    color: var(--color-accent); /* Paragraph Font Color for description */
+    color: var(--color-accent);
+}
+
+.contact-item p {
+    margin: 0.5rem 0;
+    color: var(--color-accent);
 }
 
 .contacts-form {
@@ -27,75 +50,52 @@
     gap: 20px;
 }
 
-/* Ensure textarea spans both columns */
-textarea {
-    grid-column: 1 / span 2;
-}
-
-.btn-container {
-    grid-column: 1 / span 2;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-input, textarea {
+.contacts-form input,
+.contacts-form textarea {
     width: 100%;
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background-color: var(--color-highlight); /* Paragraph Font Color for input background */
-    color: var(--color-accent); /* Secondary 1 for input text color */
+    background-color: var(--color-highlight);
+    color: var(--color-accent-dark);
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border: 2px solid #FFBE34; /* Primary 1 for focus border */
+.contacts-form textarea {
+    grid-column: 1 / span 2;
+    resize: none;
 }
 
-button {
-    background-color: var(--color-primary); /* Primary 1 for button */
-    color: var(--color-accent); /* Primary 2 for button text */
-    border: none;
-    padding: 12px 30px;
-    border-radius: 4px;
-    cursor: pointer;
+.contacts-form button {
+    grid-column: 1 / span 2;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-accent-dark);
     font-size: 1rem;
     font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-button:hover {
-    background: var(--color-accent-dark);
+.contacts-form button:hover {
+    background-color: var(--color-accent-dark);
+    color: var(--color-primary);
 }
 
 .status {
+    color: #21C065;
+    margin-top: 1rem;
     text-align: center;
-    color: #21C065; /* Green for success message */
-    margin-top: 10px;
 }
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .contacts-form {
-        grid-template-columns: 1fr; /* Stack input fields on mobile */
+        grid-template-columns: 1fr;
     }
 
-    textarea, .btn-container {
-        grid-column: 1 / span 1; /* Ensure textarea and button are full width */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contacts-header {
-        font-size: 1.5rem; /* Slightly smaller text for mobile */
-    }
-
-    button {
-        padding: 10px 20px; /* Smaller button padding for mobile */
-    }
-
-    input, textarea {
-        padding: 10px; /* Adjust input padding for smaller screens */
+    .contacts-info {
+        flex-direction: column;
     }
 }
