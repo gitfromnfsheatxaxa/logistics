@@ -6,6 +6,7 @@ import ContactCom from "../../components/ContactCom/ContactCom.jsx";
 import Service from "../Service/Service.jsx";
 import HomeCom from "../../components/HomeCom/HomeCom.jsx";
 import FAQCom from "../../components/FAQCom/FAQCom.jsx";
+import ServiceHomeCom from "../../components/Service/ServiceHomeCom.jsx";
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
                 <AboutCom/>
             </div>
             <br/>
-            <Service/>
+            <ServiceHomeCom/>
             <br/>
             <FAQCom/>
             <br/>

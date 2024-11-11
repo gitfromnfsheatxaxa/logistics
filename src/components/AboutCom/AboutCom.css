@@ -41,15 +41,16 @@
 }
 
 .contact-button {
-    background-color: var(--color-accent-dark); /* Gradient color */
+    background-color: var(--color-primary); /* Gradient color */
     color: var(--color-accent); /* Primary 2 for contrast */
     padding: 10px 20px;
-    border: none;
+    border: 1px solid var(--color-primary);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .contact-button:hover {
-    background-color: var(--color-accent); /* Lighter gradient color on hover */
+    background-color: var(--color-accent-dark); /* Lighter gradient color on hover */
+    border: 1px solid var(--color-primary);
 }

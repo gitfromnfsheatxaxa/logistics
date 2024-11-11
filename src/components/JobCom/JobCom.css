@@ -24,7 +24,7 @@
 .telegram-form input,
 .telegram-form textarea,
 .telegram-form select {
-    background-color: var(--color-highlight); /* Using highlight color */
+    background-color: var(--color-accent-dark); /* Using highlight color */
     border: 1px solid var(--color-accent); /* Using accent color */
     padding: 1rem;
     border-radius: 5px;
