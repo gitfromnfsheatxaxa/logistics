@@ -48,7 +48,6 @@
 /* Button styling */
 button {
     background-color: var(--color-primary); /* Using primary color */
-
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     padding: 12px;
@@ -61,7 +60,6 @@ button {
 
  button:hover {
     background-color: var(--color-accent-dark); /* Darker hover color */
-    transform: translateY(-2px); /* Hover effect */
      color: var(--color-primary);
 }
 
@@ -84,4 +82,92 @@ button {
 
 h1 {
     color: var(--color-primary); /* Using primary color for heading */
+}
+
+
+
+.job-offer-container {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: var(--color-accent);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.job-offer-container button{
+    width: 30%;
+    margin: 3rem auto;
+    border: 1px solid var(--color-primary);
+
+}
+
+.job-offer-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.job-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-highlight);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.job-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-card-image {
+    margin-bottom: 15px;
+}
+
+.job-card-image img {
+
+    object-fit: contain;
+}
+
+.job-card-description {
+    font-size: 1rem;
+    color: var(--color-accent-dark);
+    text-align: center;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .job-cards-grid {
+        grid-template-columns: 1fr; /* Stacking cards on smaller screens */
+    }
+    .job-offer-container{
+        width: 100%;
+        padding: 0 2rem ;
+    }
 }

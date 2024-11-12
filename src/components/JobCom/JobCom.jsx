@@ -118,7 +118,8 @@ const JobCom = () => {
                     onChange={(e) => setUserType(e.target.value)}
                 >
                     <option value="Company Driver">Company Driver</option>
-                    <option value="Owner Operator">Owner Operator</option>
+                    <option value="Company Driver">Company Driver</option>
+                    <option value="Truck">Truck</option>
                 </select>
                 <label htmlFor="additional-contact">Additional Contact (Optional):</label>
                 <input

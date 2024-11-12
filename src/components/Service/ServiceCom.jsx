@@ -170,7 +170,9 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
+
                 <h2 className="category-title">2. Accounting Services</h2>
+
                 <div className="service-grid">
                     {servicesData.accountingServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -182,6 +184,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
+
                 <h2 className="category-title">3. Safety Services</h2>
                 <div className="service-grid">
                     {servicesData.safetyServices.map((service, index) => (
@@ -206,7 +209,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="contact-button">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact"><button className="contact-button">Contact us</button></Link>
             </div>
         </div>
     );

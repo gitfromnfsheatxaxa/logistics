@@ -1,12 +1,20 @@
 /* Container styling */
 .news-container {
     padding: 20px;
-    background-color: #0A1838; /* Dark background */
+    background-color: var(--color-accent); /* Dark background */
     color: #fff;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 2.8rem auto;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Nice button {
+    width: 30%;
+    border: 1px solid var(--color-primary);
+}
+
+.Nice {
+    text-align: center;
 }
 
 /* Grid layout for items */
@@ -25,9 +33,6 @@
     transition: transform 0.2s;
 }
 
-.news-item:hover {
-    transform: translateY(-5px); /* Hover lift effect */
-}
 
 .news-item h3 {
     margin: 0;

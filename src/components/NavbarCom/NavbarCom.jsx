@@ -37,7 +37,7 @@ const NavbarCom = () => {
                             <Link className="nav-link" to="/job" onClick={closeMobileMenu}>Job Offer</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/news" onClick={closeMobileMenu}>News</Link>
+                            <Link className="nav-link" to="/trucks" onClick={closeMobileMenu}>Trucks</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/services" onClick={closeMobileMenu}>Services</Link>

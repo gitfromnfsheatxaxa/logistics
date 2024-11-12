@@ -6,7 +6,7 @@
     margin: 2rem auto;
     text-align: center;
     padding: 2rem;
-    color: #2a2a2a;
+    color: var(--color-accent-dark);
     font-family: "Rubik", sans-serif;
     background-color: var(--color-accent-dark);
 }
@@ -34,6 +34,7 @@
     margin: 1.5rem 0;
     font-size: 1.2rem !important;
 }
+
 /* Service grid */
 .service-grid {
     display: grid;
@@ -98,14 +99,15 @@
 /* Service description */
 .service-description {
     font-size: 0.9rem;
-    color: #495057;
+    color: var(--color-accent-dark);
 }
 .service-home-container {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 4.5rem 0;
     background-color: var(--color-accent);
 }
 
@@ -115,17 +117,17 @@
 
 .service-description {
     font-size: 14px;
-    color: #777;
+    color: var(--color-accent-dark);
 }
 
 
 .service-categories {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     margin-top: 40px;
-
 }
 
 .service-category-card {
@@ -140,7 +142,11 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.service-category-card:hover{
+    transform: translateY(-0.3rem);
+    transition: 0.3s ease;
+    background-color: var(--color-highlight);
+}
 .category-icon {
     width: 50px;
     height: 50px;
@@ -155,7 +161,7 @@
 
 .category-description {
     font-size: 14px;
-    color: #555;
+    color: var(--color-accent-dark);
 }
 
 .view-all-services-button {
@@ -178,5 +184,13 @@
 .view-all-services-button button:hover {
     background-color: var(--color-accent-dark);
 }
-
-
+@media (max-width: 768px){
+    .service-categories {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+    }
+}

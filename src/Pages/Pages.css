@@ -1,13 +1,14 @@
 :root {
     --color-primary: #FFBE34; /* Title */
     --color-accent-dark: #091242; /* backround*/
+    --color-accent-light: #001F3F; /* backround*/
     --color-accent: #f4f4f4; /* Paragraph Font Color */
     --color-highlight: #f9f9f9; /* Heading Font Color */
 }
 
 /* Contacts Page */
 .contacts-container {
-    width: 90% ;
+    width: 100% ;
         /*background-color: var(--color-accent-dark); !* Using primary color *!*/
 }
 
@@ -50,20 +51,6 @@
 }
 
 /* Responsive styles for Job Page */
-@media (max-width: 768px) {
-    .job-container {
-        padding: 2rem 1rem; /* Less padding on smaller screens */
-    }
-
-    .job-heading {
-        font-size: 2rem; /* Smaller heading size */
-    }
-
-    .job-description {
-        font-size: 1rem; /* Smaller description size */
-        padding: 0 1rem; /* Padding for smaller screens */
-    }
-}
 
 /* Footer styles */
 footer {
@@ -111,7 +98,7 @@ footer {
 
 .not-found-description {
     font-size: 1rem;
-    color: #666666;
+    color: var(--color-accent-dark);
     margin-bottom: 30px;
 }
 
@@ -133,8 +120,25 @@ footer {
 }
 
 .about-home{
-    margin-top:100vh;
+    margin-top:90vh;
 }
 .service-page{
     background-color: var(--color-highlight);
+}
+@media (max-width: 768px) {
+    .contacts-container,.job-container {
+        width: 100%;
+    }
+    .job-container {
+        padding: 2rem 1rem; /* Less padding on smaller screens */
+    }
+
+    .job-heading {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .job-description {
+        font-size: 1rem; /* Smaller description size */
+        padding: 0 1rem; /* Padding for smaller screens */
+    }
 }
