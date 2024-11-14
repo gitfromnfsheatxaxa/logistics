@@ -8,7 +8,7 @@ const JobOfferCom = () => {
         <div className="job-offer-container">
             <h1 className="job-offer-heading">Job Opportunities</h1>
             <div className="job-cards-grid">
-                <Link to="apply">
+                <Link to="/contact">
                     <div className="job-card">
                         <h2 className="job-card-title">Shipper</h2>
                         <div className="job-card-content">
