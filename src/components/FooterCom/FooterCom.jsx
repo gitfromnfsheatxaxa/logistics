@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="footer-contact">
                         <p>Email: info@moglobetrucking.com</p>
                         <p>Call Us: (512) 787-0305</p>
-                        <p>Address: 5203 Golden gate dr Killeen TX 76549</p>
+                        <p>Address: 5203 Golden Gate Dr Killeen, TX 76549</p>
                     </div>
                 </div>
 

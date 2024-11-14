@@ -204,7 +204,7 @@ const ServiceCom = () => {
             <h1 className="service-com-title">Our Comprehensive Services</h1>
 
             <div className="service-category">
-                <h2 className="category-title">Turnkey Services</h2>
+                <h2 className="category-title">Turnkey</h2>
                 <div className="service-grid">
                     {servicesData.turnKeyServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -216,7 +216,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
-                <h2 className="category-title">Fleet Services</h2>
+                <h2 className="category-title">Fleet</h2>
                 <div className="service-grid">
                     {servicesData.fleetServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -228,7 +228,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
-                <h2 className="category-title">Accounting Services</h2>
+                <h2 className="category-title">Accounting</h2>
                 <div className="service-grid">
                     {servicesData.accountingServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -240,7 +240,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
-                <h2 className="category-title">Safety Services</h2>
+                <h2 className="category-title">Safety</h2>
                 <div className="service-grid">
                     {servicesData.safetyServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -251,7 +251,7 @@ const ServiceCom = () => {
                 </div>
             </div>
             <div className="service-category">
-                <h2 className="category-title">Dispatch Services</h2>
+                <h2 className="category-title">Dispatch</h2>
                 <div className="service-grid">
                     {servicesData.dispatchServices.map((service, index) => (
                         <div key={index} className="service-item">

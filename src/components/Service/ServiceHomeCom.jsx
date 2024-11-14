@@ -4,6 +4,7 @@ import Icon1 from "../../../public/Sheild Icon.webp"
 import Icon2 from "../../../public/Icon (4).webp"
 import Icon3 from "../../../public/Icon (3).webp"
 import Icon4 from "../../../public/Icon (6).webp"
+import Icon5 from "../../../public/Icon (5).webp"
 import {Link} from "react-router-dom";
 const ServiceHomeCom = () => {
     return (
@@ -15,25 +16,29 @@ const ServiceHomeCom = () => {
 
             <div className="service-categories">
                 <div className="service-category-card">
-                    <img src={Icon2} alt="Fleet Services Icon" className="category-icon" />
+                    <img src={Icon2} alt="Fleet Services Icon" className="category-icon"/>
                     <p className="category-title-home">Fleet Services</p>
                     <p className="category-description">Comprehensive fleet management solutions.</p>
                 </div>
 
                 <div className="service-category-card">
-                    <img src={Icon4} alt="Accounting Services Icon" className="category-icon" />
+                    <img src={Icon4} alt="Accounting Services Icon" className="category-icon"/>
                     <p className="category-title-home">Accounting Services</p>
                     <p className="category-description">Expert financial services for your business.</p>
                 </div>
-
                 <div className="service-category-card">
-                    <img src={Icon1} alt="Safety Services Icon" className="category-icon" />
+                    <img src={Icon5} alt="Dispatch" className="category-icon"/>
+                    <p className="category-title-home">Dispatch Services</p>
+                    <p className="category-description">Focus on Your Business, Let Us Handle the Dispatching</p>
+                </div>
+                <div className="service-category-card">
+                    <img src={Icon1} alt="Safety Services Icon" className="category-icon"/>
                     <p className="category-title-home">Safety Services</p>
                     <p className="category-description">Ensuring the safety of your drivers and cargo.</p>
                 </div>
 
                 <div className="service-category-card">
-                    <img src={Icon3} alt="Turnkey Services Icon" className="category-icon" />
+                    <img src={Icon3} alt="Turnkey Services Icon" className="category-icon"/>
                     <p className="category-title-home">Turnkey Services</p>
                     <p className="category-description">Complete solutions for your operational needs.</p>
                 </div>
