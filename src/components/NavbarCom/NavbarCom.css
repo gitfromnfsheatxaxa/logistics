@@ -54,7 +54,8 @@
 .nav-link {
     text-decoration: none;
     color: var(--color-primary); /* Updated link color */
-    font-size: 1em;
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
     transition: color 0.3s;
 }
 

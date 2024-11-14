@@ -1,6 +1,6 @@
 import React from "react";
-import shipperIcon from "../../../public/Icon (3).png";
-import driverIcon from "../../../public/Icon (4).png";
+import shipperIcon from "../../../public/Icon (3).webp";
+import driverIcon from "../../../public/Icon (4).webp";
 import {Link} from "react-router-dom";
 
 const JobOfferCom = () => {
@@ -39,7 +39,7 @@ const JobOfferCom = () => {
                 </div>
 
             </div>
-            <Link to="/job">
+            <Link to="/apply">
                 <button>Apply</button>
             </Link>
         </div>

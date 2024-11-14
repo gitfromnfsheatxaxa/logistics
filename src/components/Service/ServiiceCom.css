@@ -75,7 +75,7 @@
 
 .service-item:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
-    scale: 1.05;
+    transform: translateY(-5px);
     background-color: var(--color-accent-dark);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     .service-description{
@@ -98,11 +98,10 @@
 
 /* Service description */
 .service-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--color-accent-dark);
 }
 .service-home-container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,10 +114,6 @@
     text-align: center;
 }
 
-.service-description {
-    font-size: 14px;
-    color: var(--color-accent-dark);
-}
 
 
 .service-categories {
@@ -141,6 +136,9 @@
     width: 200px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.service-category{
+    margin-bottom: 2rem;
 }
 .service-category-card:hover{
     transform: translateY(-0.3rem);

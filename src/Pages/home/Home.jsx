@@ -12,12 +12,12 @@ const Home = () => {
             <HomeCom/>
             <br/>
             <div className="about-home">
-                <AboutCom/>
+                <ServiceHomeCom/>
             </div>
             <br/>
-            <ServiceHomeCom/>
-            <br/>
             <JobOfferCom/>
+            <br/>
+            <AboutCom/>
             <br/>
             <ContactCom/>
             <br/>

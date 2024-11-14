@@ -11,8 +11,9 @@ const Footer = () => {
                         Streamlining Your Supply Chain, One Shipment at a Time
                     </p>
                     <div className="footer-contact">
-                        <p>Email: contact@logistics.com</p>
-                        <p>Call Us: (00) 112 365 489</p>
+                        <p>Email: info@moglobetrucking.com</p>
+                        <p>Call Us: (512) 787-0305</p>
+                        <p>Address: 5203 Golden gate dr Killeen TX 76549</p>
                     </div>
                 </div>
 
@@ -29,13 +30,17 @@ const Footer = () => {
                     </div>
 
                     <div className="links-section">
-                        <h3>Utility</h3>
+                        <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Style Guide</a></li>
-                            <li><a href="#">Changelog</a></li>
-                            <li><a href="#">Licenses</a></li>
-                            <li><a href="#">Protected</a></li>
-                            <li><a href="#">Not Found</a></li>
+                            <li><a href="/service">Turnkey Services</a></li>
+                            <li><a href="/service">Fleet Services
+                            </a></li>
+                            <li><a href="/service">Accounting Services
+                            </a></li>
+                            <li><a href="/service">Safety Services
+                            </a></li>
+                            <li><a href="/service">Dispatch
+                            </a></li>
                         </ul>
                     </div>
                 </div>

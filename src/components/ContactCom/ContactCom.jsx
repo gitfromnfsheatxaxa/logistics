@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './ContactsCom.css';
-import icon1 from '../../../public/Icon.png';
-import icon2 from '../../../public/Icon (1).png';
-import icon3 from '../../../public/Icon (2).png';
+import icon1 from '../../../public/Icon.svg';
+import icon2 from '../../../public/Icon (1).svg';
+import icon3 from '../../../public/Icon (2).svg';
 const ContactsCom = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -51,16 +51,15 @@ const ContactsCom = () => {
             <div className="contacts-info">
                 <div className="contact-item">
                     <img src={icon1} alt=""/>
-                    <p>Contact@logistics.com</p>
+                    <p>info@moglobetrucking.com</p>
                 </div>
                 <div className="contact-item">
                     <img src={icon2} alt=""/>
 
-                    <p>(00) 112 365 489</p>
+                    <p>(512) 787-0305</p>
                 </div>
                 <div className="contact-item">
                     <img src={icon3} alt=""/>
-
                     <p>Mon – Sat 9.00 – 18.00<br/>Sunday Closed</p>
                 </div>
             </div>

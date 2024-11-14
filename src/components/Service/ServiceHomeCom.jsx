@@ -1,9 +1,9 @@
 import React from 'react';
 import './ServiiceCom.css'; // Create a CSS file for the styling
-import Icon1 from "../../../public/Sheild Icon.png"
-import Icon2 from "../../../public/Icon (4).png"
-import Icon3 from "../../../public/Icon (3).png"
-import Icon4 from "../../../public/Icon (6).png"
+import Icon1 from "../../../public/Sheild Icon.webp"
+import Icon2 from "../../../public/Icon (4).webp"
+import Icon3 from "../../../public/Icon (3).webp"
+import Icon4 from "../../../public/Icon (6).webp"
 import {Link} from "react-router-dom";
 const ServiceHomeCom = () => {
     return (

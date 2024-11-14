@@ -19,9 +19,9 @@ const HomeCom = () => {
                         Let us take the complexity out of logistics so you can focus on what matters most—growing your
                         business.
                     </p>
-                    <Link to="/about">
+                    <Link to="/apply">
                         <button>
-                            Learn More About Us
+                            Become a Driver
                         </button>
                     </Link>
                 </div>

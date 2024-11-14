@@ -23,8 +23,9 @@ const NavbarCom = () => {
             <div className="container">
                 <nav className="nav">
                     <Link className="Logo" to="/">
-                        <img src={Logo} alt="Logo" className="logo-image" />
-
+                        {/*<img src={Logo} alt="Logo" className="logo-image" />*/}
+                        <h1>MO GLOBE TRUCKING
+                        </h1>
                     </Link>
                     <ul className={`nav-list ${mobileMenuOpen ? 'open' : ''}`}>
                         <li className="nav-item">
@@ -33,9 +34,7 @@ const NavbarCom = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/about" onClick={closeMobileMenu}>About</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/job" onClick={closeMobileMenu}>Job Offer</Link>
-                        </li>
+
                         <li className="nav-item">
                             <Link className="nav-link" to="/trucks" onClick={closeMobileMenu}>Trucks</Link>
                         </li>
@@ -45,10 +44,13 @@ const NavbarCom = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact" onClick={closeMobileMenu}>Contact</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/apply" onClick={closeMobileMenu}>Apply Now</Link>
+                        </li>
                     </ul>
                     <div className="nav-actions">
                         <button className="toggle-mobile-button" onClick={handleToggleMobileMenu}>
-                        {mobileMenuOpen ? (
+                            {mobileMenuOpen ? (
                                 <FontAwesomeIcon className="burger" icon={faAlignRight} />
                             ) : (
                                 <FontAwesomeIcon className="burger" icon={faAlignJustify} />

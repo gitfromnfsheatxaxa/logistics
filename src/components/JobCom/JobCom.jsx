@@ -77,23 +77,8 @@ const JobCom = () => {
     return (
         <>
             <form onSubmit={handleSubmit} className="telegram-form">
-                <h1 className="apply">Apply for the Company</h1>
+                <h1 className="apply">Application</h1>
 
-                <label htmlFor="name">Write your Full name <span style={{color: 'red'}}>*</span></label>
-                <input
-                    type="text"
-                    id="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
-
-                <label htmlFor="message">Message:</label>
-                <textarea
-                    id="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                />
 
                 <label htmlFor="email">Email:</label>
                 <input
@@ -118,8 +103,7 @@ const JobCom = () => {
                     onChange={(e) => setUserType(e.target.value)}
                 >
                     <option value="Company Driver">Company Driver</option>
-                    <option value="Company Driver">Company Driver</option>
-                    <option value="Truck">Truck</option>
+                    <option value="Owner Operator">Owner Operator</option>
                 </select>
                 <label htmlFor="additional-contact">Additional Contact (Optional):</label>
                 <input
@@ -130,12 +114,27 @@ const JobCom = () => {
                     placeholder="LinkedIn, Telegram, etc."
                 />
 
-                <label htmlFor="file">Upload Your CV (PDF, DOC, etc.) :</label>
+                <label htmlFor="file">Upload CDL (Optional)</label>
                 <input
                     type="file"
                     id="file"
                     accept=".pdf,.doc,.docx,.txt"
                     onChange={(e) => setFile(e.target.files[0])}
+                />
+                <label htmlFor="name">Full name <span style={{color: 'red'}}>*</span></label>
+                <input
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+
+                <label htmlFor="message">Message:</label>
+                <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                 />
 
                 <button type="submit">Submit</button>

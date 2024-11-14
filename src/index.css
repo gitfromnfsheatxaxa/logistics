@@ -1,8 +1,10 @@
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body::-webkit-scrollbar {
     display: none; /* Hides the scrollbar for WebKit browsers */
@@ -17,6 +19,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    font-family: "Rubik", sans-serif !important;
+
 }
 @media (max-width: 768px) {
     body{

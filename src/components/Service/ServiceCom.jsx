@@ -149,6 +149,52 @@ const servicesData = {
             title: 'Technology Integration',
             description: 'We provide cutting-edge technology solutions, including fleet tracking, electronic logging devices (ELDs), and logistics software to enhance your operational efficiency.'
         }
+    ],
+    dispatchServices: [
+        {
+            title: 'Reliable and Efficient Trucking Dispatch Services',
+            description: 'We specialize in providing comprehensive dispatch services designed for your trucking operations, whether you\'re an owner-operator, a small fleet, or a medium transportation company.'
+        },
+        {
+            title: 'Expert Load Management',
+            description: 'We handle the time-consuming process of load assignment, matching your available drivers with the right freight based on capacity, location, and delivery deadlines. We aim to maximize your fleet’s efficiency while keeping your drivers on schedule and reducing empty miles.'
+        },
+        {
+            title: 'Real-Time Route Planning',
+            description: 'Our dispatch team uses the latest GPS technology to plan optimal routes, accounting for road conditions, traffic, weather, and regulatory requirements. We make sure your drivers are always on the fastest, safest, and most fuel-efficient route, reducing delays and operating costs.'
+        },
+        {
+            title: 'Seamless Communication',
+            description: 'Our dispatchers maintain constant communication with your drivers throughout their journey. Whether it’s providing updates, rerouting for weather disruptions, or handling unexpected challenges, we are always just a call away. Our proactive approach ensures issues are resolved quickly, minimizing downtime.'
+        },
+        {
+            title: 'Customer-Centric Support',
+            description: 'We pride ourselves on providing exceptional customer service. From dispatching the right loads to updating customers on delivery progress, we are dedicated to maintaining strong communication with both you, your drivers, and customers. Your satisfaction is our priority, and we go above and beyond to meet your needs.'
+        },
+        {
+            title: '24/7 Dispatch Availability',
+            description: 'Providing round-the-clock dispatch services to ensure your operations run smoothly, regardless of time or day.'
+        },
+        {
+            title: 'Load and Route Optimization',
+            description: 'Maximizing efficiency by assigning the right loads to the right drivers and planning routes that minimize delays and fuel consumption.'
+        },
+        {
+            title: 'Freight Tracking and Monitoring',
+            description: 'Tracking freight in real-time to provide updates on delivery status, estimated arrival times, and any delays.'
+        },
+        {
+            title: 'Real-Time Updates and Problem Resolution',
+            description: 'Delivering timely updates to all stakeholders and resolving issues as they arise to keep your operation running without interruption.'
+        },
+        {
+            title: 'Customer Communication and Reporting',
+            description: 'Maintaining constant communication with customers to provide status updates, delivery estimates, and resolution of any concerns.'
+        },
+        {
+            title: 'Focus on Your Business, Let Us Handle the Dispatching',
+            description: 'Allowing you to focus on growing your business while we handle the logistics and operations of dispatching, route planning, and freight management.'
+        }
     ]
 };
 
@@ -158,7 +204,19 @@ const ServiceCom = () => {
             <h1 className="service-com-title">Our Comprehensive Services</h1>
 
             <div className="service-category">
-                <h2 className="category-title">1. Fleet Services</h2>
+                <h2 className="category-title">Turnkey Services</h2>
+                <div className="service-grid">
+                    {servicesData.turnKeyServices.map((service, index) => (
+                        <div key={index} className="service-item">
+                            <h3 className="service-title">{service.title}</h3>
+                            <p className="service-description">{service.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="service-category">
+                <h2 className="category-title">Fleet Services</h2>
                 <div className="service-grid">
                     {servicesData.fleetServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -170,9 +228,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
-
-                <h2 className="category-title">2. Accounting Services</h2>
-
+                <h2 className="category-title">Accounting Services</h2>
                 <div className="service-grid">
                     {servicesData.accountingServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -184,8 +240,7 @@ const ServiceCom = () => {
             </div>
 
             <div className="service-category">
-
-                <h2 className="category-title">3. Safety Services</h2>
+                <h2 className="category-title">Safety Services</h2>
                 <div className="service-grid">
                     {servicesData.safetyServices.map((service, index) => (
                         <div key={index} className="service-item">
@@ -195,11 +250,10 @@ const ServiceCom = () => {
                     ))}
                 </div>
             </div>
-
             <div className="service-category">
-                <h2 className="category-title">4. Turnkey Services</h2>
+                <h2 className="category-title">Dispatch Services</h2>
                 <div className="service-grid">
-                    {servicesData.turnKeyServices.map((service, index) => (
+                    {servicesData.dispatchServices.map((service, index) => (
                         <div key={index} className="service-item">
                             <h3 className="service-title">{service.title}</h3>
                             <p className="service-description">{service.description}</p>
@@ -209,7 +263,9 @@ const ServiceCom = () => {
             </div>
 
             <div className="contact-button">
-                <Link to="/contact"><button className="contact-button">Contact us</button></Link>
+                <Link to="/contact">
+                    <button className="contact-button">Contact us</button>
+                </Link>
             </div>
         </div>
     );

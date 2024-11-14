@@ -1,8 +1,9 @@
 import React from 'react';
 import './AboutCom.css';
-import Image1 from '../../../public/photo_2024-11-11_18-31-04.png';
-import Image2 from '../../../public/IMG_4610.png';
-import Image3 from '../../../public/photo_2024-11-12_11-57-03.png';
+import Image1 from '../../../public/photo_2024-11-11_18-31-04.webp';
+import Image2 from '../../../public/IMG_4627.webp';
+import Image3 from '../../../public/photo_2024-11-12_11-57-03.webp';
+import Image4 from '../../../public/IMG_4610.webp';
 const AboutCom = () => {
     const cards = [
         {
@@ -22,7 +23,7 @@ const AboutCom = () => {
         },
         {
             title: 'Get Started Today!',
-            img:Image1,
+            img:Image4,
             description: `At MO GLOBE TRUCKING, we are committed to being your trusted partner in freight transportation. Whether you’re looking to move large shipments or need specialized logistics services, we offer flexible, cost-effective solutions that meet your needs. Contact us today for a free quote or to learn more about how we can help streamline your transportation and logistics operations. Let us take the hassle out of shipping so you can focus on growing your business.`
         }
     ];

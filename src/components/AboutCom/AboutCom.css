@@ -1,6 +1,6 @@
 .about-container {
     width: 100%;
-    margin: auto;
+    margin:  auto;
     padding: 20px;
     background: var(--color-accent);
     border-radius: 8px;
@@ -28,10 +28,6 @@
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .card-content {

@@ -1,6 +1,6 @@
 :root {
     --color-primary: #FFBE34; /* Title */
-    --color-accent-dark: #091242; /* backround*/
+    --color-accent-dark: rgb(105, 105, 105); /* backround*/
     --color-accent-light: #001F3F; /* backround*/
     --color-accent: #f4f4f4; /* Paragraph Font Color */
     --color-highlight: #f9f9f9; /* Heading Font Color */

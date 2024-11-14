@@ -21,14 +21,23 @@
 }
 
 .contacts-info {
+    width: 100%;
+
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .contact-item {
+    width: 33.333%;
     text-align: center;
     color: var(--color-accent);
+}
+.contact-item  img{
+    text-align: center;
+
+
 }
 
 .contact-item p {
