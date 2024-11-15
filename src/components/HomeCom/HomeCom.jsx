@@ -1,32 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeCom.css";
 
 const HomeCom = () => {
-    useEffect(() => {
-        // Lazy load background image on window load
-        window.addEventListener("load", () => {
-            const headerImg = document.querySelector(".header-img");
-            if (headerImg) {
-                headerImg.classList.add("loaded");
-            }
-        });
+    const [bgLoaded, setBgLoaded] = useState(false);
 
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener("load", () => {
-                const headerImg = document.querySelector(".header-img");
-                if (headerImg) {
-                    headerImg.classList.remove("loaded");
-                }
-            });
-        };
+    useEffect(() => {
+        const handleLoad = () => setBgLoaded(true);
+        window.addEventListener("load", handleLoad);
+
+        return () => window.removeEventListener("load", handleLoad);
     }, []);
 
     return (
-        <div className="header-img">
+        <div className={`header-img ${bgLoaded ? "loaded" : ""}`}>
             <div className="header-linear"></div>
-            <div className="header-text">
-            </div>
         </div>
     );
 };
