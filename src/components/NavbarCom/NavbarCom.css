@@ -48,13 +48,10 @@
     width: 60%;
 }
 
-.nav-item {
-}
-
 .nav-link {
     text-decoration: none;
     color: var(--color-primary); /* Updated link color */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Rubik", sans-serif;
     transition: color 0.3s;
 }
@@ -71,14 +68,17 @@
 
 .toggle-mobile-button {
     background-color: var(--color-accent-dark);
-    border: none;
+    border: none !important;
     font-size: 24px;
     cursor: pointer;
     display: none;
+    padding: 0;
+    margin-top: 1rem;
 }
 
 .toggle-mobile-button:hover {
     color: var(--color-primary); /* Updated hover color */
+    border: none !important;
 }
 
 @media (max-width: 768px) {
@@ -106,6 +106,7 @@
         display: block; /* Show the toggle button on mobile */
         color: var(--color-accent); /* Updated button color */
     }
+
 }
 
 @media (max-width: 768px) {

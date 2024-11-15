@@ -48,13 +48,19 @@ const NavbarCom = () => {
                         </li>
                     </ul>
                     <div className="nav-actions">
-                        <button className="toggle-mobile-button" onClick={handleToggleMobileMenu}>
+
+                        <button
+                            className="toggle-mobile-button"
+                            onClick={handleToggleMobileMenu}
+                            aria-label={mobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
+                        >
                             {mobileMenuOpen ? (
-                                <FontAwesomeIcon className="burger" icon={faAlignRight} />
+                                <FontAwesomeIcon className="burger" icon={faAlignRight}/>
                             ) : (
-                                <FontAwesomeIcon className="burger" icon={faAlignJustify} />
+                                <FontAwesomeIcon className="burger" icon={faAlignJustify}/>
                             )}
                         </button>
+
                     </div>
                 </nav>
             </div>
