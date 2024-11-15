@@ -21,7 +21,6 @@ const NotFound = () => {
                     Back to home
                 </button>
             </div>
-            <FooterCom />
         </>
     );
 };

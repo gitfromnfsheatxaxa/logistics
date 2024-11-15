@@ -28,11 +28,11 @@
 
 /* Job Page */
 .job-container {
-    background-color: var(--color-accent-dark); /* Using accent dark color */
+    margin-top: 2rem;
+    background-color: var(--color-highlight); /* Using accent dark color */
     /*background-color: rgba(10, 24, 56, 0.9);*/
     padding: 3rem 2rem;
     text-align: center;
-    color: #FFFFFF; /* Keeping white for text */
 }
 
 .job-heading {
@@ -45,7 +45,7 @@
 .job-description {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--color-accent); /* Using accent color */
+    color: var(--color-accent-dark) !important; /* Keeping white for text */
     max-width: 700px; /* Max width for readability */
     margin: 0 auto 2.5rem auto; /* Centered with margin below */
 }

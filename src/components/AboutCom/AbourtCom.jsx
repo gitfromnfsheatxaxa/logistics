@@ -27,8 +27,6 @@ const AboutCom = () => {
             description: `At MO GLOBE TRUCKING, we are committed to being your trusted partner in freight transportation. Whether you’re looking to move large shipments or need specialized logistics services, we offer flexible, cost-effective solutions that meet your needs. Contact us today for a free quote or to learn more about how we can help streamline your transportation and logistics operations. Let us take the hassle out of shipping so you can focus on growing your business.`
         }
     ];
-
-
     return (
         <div className="about-container">
             <div className="cards-grid">
@@ -38,7 +36,6 @@ const AboutCom = () => {
 
                         <div className={`card-content ${index % 2 === 0 ? 'left' : 'right'}`}>
                             <div className="card-image">
-                                {/* Replace with actual image if needed */}
                                 <img src={card.img} alt="Card Image"/>
                             </div>
                             <div className="card-text">

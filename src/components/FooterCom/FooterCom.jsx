@@ -32,11 +32,11 @@ const Footer = () => {
                     <div className="links-section">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="/service">Turnkey Services</a></li>
-                            <li><a href="/service">Fleet Services</a></li>
-                            <li><a href="/service">Accounting Services</a></li>
-                            <li><a href="/service">Safety Services</a></li>
-                            <li><a href="/service">Dispatch</a></li>
+                            <li><a href="/services">Turnkey Services</a></li>
+                            <li><a href="/services">Fleet Services</a></li>
+                            <li><a href="/services">Accounting Services</a></li>
+                            <li><a href="/services">Safety Services</a></li>
+                            <li><a href="/services">Dispatch</a></li>
                         </ul>
                     </div>
                 </div>

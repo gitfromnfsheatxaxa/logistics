@@ -1,6 +1,6 @@
 .about-container {
-    width: 100%;
-    margin:  auto;
+    width: 87%;
+    margin: 5rem auto;
     padding: 20px;
     background: var(--color-accent);
     border-radius: 8px;
