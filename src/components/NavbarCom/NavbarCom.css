@@ -37,7 +37,14 @@
     font-size: 2rem;
     width: 150px;
 }
-
+.Logo{
+    padding: 12px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav-list {
     list-style: none;
     display: flex;
@@ -72,8 +79,12 @@
     font-size: 24px;
     cursor: pointer;
     display: none;
-    padding: 0;
+    padding: 12px;
     margin-top: 1rem;
+    min-width: 44px;
+    min-height: 44px;
+
+
 }
 
 .toggle-mobile-button:hover {
