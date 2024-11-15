@@ -12,7 +12,7 @@ const HomeCom = () => {
     }, []);
 
     return (
-        <div className="header-img loaded">
+        <div className={`header-img ${bgLoaded ? "loaded" : ""}`}>
             <div className="header-linear"></div>
         </div>
     );
