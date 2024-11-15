@@ -33,14 +33,10 @@ const Footer = () => {
                         <h3>Services</h3>
                         <ul>
                             <li><a href="/service">Turnkey Services</a></li>
-                            <li><a href="/service">Fleet Services
-                            </a></li>
-                            <li><a href="/service">Accounting Services
-                            </a></li>
-                            <li><a href="/service">Safety Services
-                            </a></li>
-                            <li><a href="/service">Dispatch
-                            </a></li>
+                            <li><a href="/service">Fleet Services</a></li>
+                            <li><a href="/service">Accounting Services</a></li>
+                            <li><a href="/service">Safety Services</a></li>
+                            <li><a href="/service">Dispatch</a></li>
                         </ul>
                     </div>
                 </div>

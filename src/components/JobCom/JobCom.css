@@ -9,7 +9,6 @@
     flex-direction: column;
     gap: 1.5rem;
     color: var(--color-accent); /* Light text */
-    font-family: 'Arial', sans-serif;
 }
 
 .apply {
