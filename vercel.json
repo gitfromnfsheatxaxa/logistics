@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "http://moglobetrucking.com",
+      "source": "https://moglobetrucking.com",
       "destination": "https://moglobetrucking.com",
       "permanent": true
     }
