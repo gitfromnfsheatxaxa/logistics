@@ -13,7 +13,7 @@ const ContactsCom = () => {
     const [status, setStatus] = useState('');
 
     const BOT_TOKEN = '8093316717:AAHTCqtW189UlkgnW8X2SezZzOYSGdKwrx0'; // Your Bot Token
-    const CHAT_ID = '-4508871797';
+    const CHAT_ID = '-1002404493511';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
