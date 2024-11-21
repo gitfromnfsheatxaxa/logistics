@@ -66,7 +66,7 @@
     color: var(--color-accent-dark);
     font-size: 1.2rem;
     line-height: 1.6;
-    white-space: pre-line; /* To handle new lines */
+    white-space: pre-line;
 }
 
 .card-title {
