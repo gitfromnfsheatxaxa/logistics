@@ -5,7 +5,7 @@ export const BlogContext = createContext();
 
 export const BlogProvider = ({ children }) => {
     const [array, setArray] = useState([]);
-    const url = 'http://127.0.0.1:8090/api/collections/news/records/';
+    const url = 'http://63.141.255.241:8080/api/collections/trucks/records';
 
     const getData = async () => {
         try {
