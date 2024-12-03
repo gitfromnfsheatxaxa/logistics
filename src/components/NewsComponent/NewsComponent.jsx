@@ -3,8 +3,12 @@ import './NewsComponent.css';
 
 const AdminCom = ({ el }) => {
 
+<<<<<<< HEAD
     // const imageUrl = `http://63.141.255.241:8080/api/files/${el.collectionId}/${el.id}/${el.image[0]}`;
     const imageUrl = ""
+=======
+    const imageUrl = `http://63.141.255.241:8080/api/files/${el.collectionId}/${el.id}/${el.image[0]}`;
+>>>>>>> d3ee532e9bc97f054d76633b143b5da9a53f6bcf
     return (
         <div className="container-news">
             <div className="main-image" key={el.id}>
