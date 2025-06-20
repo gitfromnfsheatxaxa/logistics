@@ -14,6 +14,7 @@ import News from "./Pages/News/News.jsx";
 import Footer from "./components/FooterCom/FooterCom.jsx";
 import FooterCom from "./components/FooterCom/FooterCom.jsx";
 import Service from "./Pages/Service/Service.jsx";
+import Privacy from "./Pages/privacy/privacy.jsx";
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -31,6 +32,7 @@ function App() {
                     <Route path="*" element={<NotFound/>}/>
                     <Route path="/trucks" element={<News/>}/>
                     <Route path="/services" element={<Service/>}/>
+                    <Route path="/privacy" element={<Privacy/>}/>
                     <Route path="*" element={<Link to="/"/>}/> </Routes>
 
             </main>

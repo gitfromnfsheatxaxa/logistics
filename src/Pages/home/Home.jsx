@@ -37,7 +37,10 @@ const Home = () => {
             <JobOfferCom/>
             <br/>
             <AboutCom/>
-            <br/>
+            <br />
+
+
+            <br />
             <ContactCom/>
             <br/>
         </div>
