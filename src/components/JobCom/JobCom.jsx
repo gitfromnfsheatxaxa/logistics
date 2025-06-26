@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import {useBlog} from '../../Context';
 import "./JobCom.css"
+import { Link } from "react-router-dom";
 
 const JobCom = () => {
     const [message, setMessage] = useState('');
@@ -12,6 +13,7 @@ const JobCom = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [additionalContact, setAdditionalContact] = useState('');
+    const [consent, setConsent] = useState(false);
 
     const {addPost} = useBlog();
 
@@ -136,6 +138,22 @@ const JobCom = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
+                <div id="consent-checkbox" className="consent-checkbox">
+                    <input
+                        type="checkbox"
+                        id="consent"
+                        checked={consent}
+                        onChange={(e) => setConsent(e.target.checked)}
+                        required
+                    />
+                    <label htmlFor="consent">
+                        By providing my phone number to “MO GLOBE TRUCKING CORP,” I agree and acknowledge that MO GLOBE TRUCKING corp  may send text messages to my wireless phone number for any purpose. Message frequency will vary, and Message and data rates may apply. If you need further assistance, please reply “HELP”. You can also opt out by replying “STOP.”  For more information on how your data will be handled, please visit 
+                        ‎
+                        <Link className='a' to="/privacy">
+                             Privacy & Policy↗
+                        </Link>
+                    </label>
+                </div>
 
                 <button type="submit">Submit</button>
 
