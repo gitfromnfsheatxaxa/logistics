@@ -109,12 +109,10 @@ const ContactsCom = () => {
                         required
                     />
                     <label htmlFor="consent">
-                        No mobile information will be shared with third parties/affiliates for marketing/promotional purposes.
-                        All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
-                       
+                        By providing my phone number to “MO GLOBE TRUCKING CORP,” I agree and acknowledge that MO GLOBE TRUCKING corp  may send text messages to my wireless phone number for any purpose. Message frequency will vary, and Message and data rates may apply. If you need further assistance, please reply “HELP”. You can also opt out by replying “STOP.”  For more information on how your data will be handled, please visit 
                         ‎
                         <Link className='a' to="/privacy">
-                             Privacy & Policy ↗
+                             Privacy & Policy↗
                         </Link>
                     </label>
                 </div>
