@@ -4,6 +4,7 @@ import './ContactsCom.css';
 import icon1 from '../../../public/Icon.svg';
 import icon2 from '../../../public/Icon (1).svg';
 import icon3 from '../../../public/Icon (2).svg';
+import { Link } from "react-router-dom";
 const ContactsCom = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -11,6 +12,7 @@ const ContactsCom = () => {
     const [city, setCity] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
+    const [consent, setConsent] = useState(false);
 
     const BOT_TOKEN = '8093316717:AAHTCqtW189UlkgnW8X2SezZzOYSGdKwrx0'; // Your Bot Token
     const CHAT_ID = '-1002404493511';
@@ -50,17 +52,16 @@ const ContactsCom = () => {
 
             <div className="contacts-info">
                 <div className="contact-item">
-                    <img src={icon1} alt=""/>
+                    <img src={icon1} alt="" />
                     <p>info@moglobetrucking.com</p>
                 </div>
                 <div className="contact-item">
-                    <img src={icon2} alt=""/>
-
+                    <img src={icon2} alt="" />
                     <p>(512) 787-0305</p>
                 </div>
                 <div className="contact-item">
-                    <img src={icon3} alt=""/>
-                    <p>Mon – Sat 9.00 – 18.00<br/>Sunday Closed</p>
+                    <img src={icon3} alt="" />
+                    <p>Mon – Sat 9.00 – 18.00<br />Sunday Closed</p>
                 </div>
             </div>
 
@@ -98,6 +99,26 @@ const ContactsCom = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
+
+                <div id="consent-checkbox" className="consent-checkbox">
+                    <input
+                        type="checkbox"
+                        id="consent"
+                        checked={consent}
+                        onChange={(e) => setConsent(e.target.checked)}
+                        required
+                    />
+                    <label htmlFor="consent">
+                        No mobile information will be shared with third parties/affiliates for marketing/promotional purposes.
+                        All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+                       
+                        ‎
+                        <Link className='a' to="/privacy">
+                             Privacy & Policy ↗
+                        </Link>
+                    </label>
+                </div>
+
                 <button type="submit">Submit Message</button>
             </form>
             <h3 className="status">{status && <p>{status}</p>}</h3>
