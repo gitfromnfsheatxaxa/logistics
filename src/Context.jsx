@@ -1,16 +1,16 @@
-import React, {createContext, useState, useContext, useEffect} from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 export const BlogContext = createContext();
 
-export const BlogProvider = ({children}) => {
+export const BlogProvider = ({ children }) => {
     const [array, setArray] = useState([]);
-    const url = 'http://63.141.255.241:8080/api/collections/trucks/records';
-    // const url = "";
+    const url = `https://midnight-sec-back.onrender.com/api/products/`;
+
     const getData = async () => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            setArray(data);
+            setArray(data); // directly set the array
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -21,7 +21,7 @@ export const BlogProvider = ({children}) => {
     }, []);
 
     return (
-        <BlogContext.Provider value={{array: array.items, getData, setArray}}>
+        <BlogContext.Provider value={{ array, getData, setArray }}>
             {children}
         </BlogContext.Provider>
     );

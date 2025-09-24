@@ -10,11 +10,11 @@ const News = ({el}) => {
         <div className="news-container">
             <div className="Nice">
                 {
-                    array?.map(el => {
-                       return  <NewsComponent key={el?.id} el={el}/>
+                    array?.filter((el) => el.description !== "Pumps-zegor")?.map(el => {
+                       return  <NewsComponent key={el?._id} el={el}/>
                     })
                 }
-                <Link to="/job"><button>Contact us</button></Link>
+                <Link to="/contact"><button>Contact us</button></Link>
             </div>
 
         </div>
